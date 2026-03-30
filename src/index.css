@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+/* ========== DESIGN TOKENS ========== */
+@theme {
+  --color-deep-blue: #102A43;
+  --color-deep-blue-light: #1A3A54;
+  --color-teal: #0FB3A3;
+  --color-teal-dark: #0D9E90;
+  --color-teal-glow: #0FB3A340;
+  --color-graphite: #1F2933;
+  --color-graphite-light: #2A3642;
+  --color-light-slate: #9FB3C8;
+  --color-alert-red: #FF4B4B;
+  --color-gain-gold: #FFC107;
+  --color-surface: #F0F4F8;
+  --color-white: #FFFFFF;
+  --color-glass: rgba(31, 41, 51, 0.6);
+  --color-glass-border: rgba(159, 179, 200, 0.15);
+
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+/* ========== BASE ========== */
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-deep-blue);
+    color: var(--color-surface);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+/* ========== UTILITIES ========== */
+@layer utilities {
+  .glass {
+    background: var(--color-glass);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--color-glass-border);
+  }
+  
+  .gradient-text {
+    background: linear-gradient(135deg, var(--color-teal) 0%, #14D4C0 50%, var(--color-gain-gold) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .gradient-bg {
+    background: linear-gradient(180deg, var(--color-deep-blue) 0%, var(--color-graphite) 100%);
+  }
+  
+  .glow-teal {
+    box-shadow: 0 0 40px var(--color-teal-glow), 0 0 80px rgba(15, 179, 163, 0.15);
+  }
+}
+
+/* ========== SCROLLBAR ========== */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-deep-blue);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-graphite-light);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-light-slate);
+}
+
+/* ========== SECTION SPACING ========== */
+.section {
+  padding: 5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 7rem 2rem;
+  }
+}
