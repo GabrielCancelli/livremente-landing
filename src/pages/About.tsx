@@ -6,11 +6,6 @@ import {
   Users,
   ShieldCheck,
   Microscope,
-  Lock,
-  Timer,
-  Gamepad,
-  Flower2,
-  Cpu,
 } from "lucide-react";
 
 const values = [
@@ -37,33 +32,6 @@ const values = [
     title: "Comunidade genuína",
     desc: "Conexão real entre pessoas na mesma jornada. Suporte que faz diferença.",
     color: "#4ECDC4",
-  },
-];
-
-const competitors = [
-  {
-    name: "Fortify",
-    gap: "Sem comunidade brasileira",
-    icon: Lock,
-    color: "#9FB3C8",
-  },
-  {
-    name: "Nomo",
-    gap: "Sem gamificação",
-    icon: Timer,
-    color: "#FF6B35",
-  },
-  {
-    name: "Habitica",
-    gap: "Genérico, sem foco em saúde mental",
-    icon: Gamepad,
-    color: "#FFC107",
-  },
-  {
-    name: "Calm / Headspace",
-    gap: "Meditação apenas, sem foco em vícios",
-    icon: Flower2,
-    color: "#0FB3A3",
   },
 ];
 
@@ -169,51 +137,14 @@ export default function About() {
         </div>
       </section>
 
-      {/* Competitors */}
-      <section className="w-full flex flex-col items-center px-4 md:px-8 mt-16 md:mt-24">
+      {/* Differentials */}
+      <section className="w-full flex flex-col items-center px-4 md:px-8 py-16 md:py-24">
         <div className="w-full max-w-6xl">
-        <motion.h2
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-2xl md:text-3xl font-bold font-[family-name:var(--font-heading)] text-center mb-4"
-        >
-          O que nos <span className="gradient-text">diferencia</span>
-        </motion.h2>
-        <p className="text-center text-light-slate mb-10 max-w-xl mx-auto">
-          Existem bons apps lá fora. Mas nenhum combina tudo isso em um só lugar
-          — em português, para brasileiros.
-        </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6 w-full">
-          {competitors.map((comp, i) => (
-            <motion.div
-              key={comp.name}
-              initial={{ opacity: 0, y: 15 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
-              viewport={{ once: true }}
-              className="glass rounded-xl p-6 lg:p-8 flex items-center gap-4 lg:gap-6 w-full"
-            >
-              <div
-                className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
-                style={{ backgroundColor: comp.color + "20" }}
-              >
-                <comp.icon size={20} style={{ color: comp.color }} />
-              </div>
-              <div>
-                <p className="font-semibold text-sm">{comp.name}</p>
-                <p className="text-xs text-light-slate">{comp.gap}</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="mt-10 lg:mt-12 glass rounded-2xl p-8 lg:p-10 text-center border-teal/20 w-full"
+          className="glass rounded-2xl p-8 lg:p-10 text-center border-teal/20 w-full"
         >
           <p className="text-base text-light-slate mb-3">LivreMente combina:</p>
           <p className="font-semibold gradient-text text-xl lg:text-2xl">
@@ -227,31 +158,6 @@ export default function About() {
               loading="lazy"
               className="w-4 h-3 inline-block rounded-sm"
             />
-          </p>
-        </motion.div>
-        </div>
-      </section>
-
-      {/* AI-Native */}
-      <section className="w-full flex flex-col items-center px-4 md:px-8 py-16 md:py-24">
-        <div className="w-full max-w-4xl text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="glass rounded-2xl p-8 lg:p-12 flex flex-col items-center gap-5 w-full"
-        >
-          <div className="w-16 h-16 rounded-2xl bg-teal/20 flex items-center justify-center">
-            <Cpu size={32} className="text-teal" />
-          </div>
-          <h3 className="text-xl font-bold font-[family-name:var(--font-heading)]">
-            AI-Native Development
-          </h3>
-          <p className="text-light-slate leading-relaxed">
-            LivreMente é construído por 1 fundador + IA. Iteramos com a
-            velocidade de uma equipe de 10, com a paixão de quem vive a missão
-            todos os dias.
           </p>
         </motion.div>
         </div>
