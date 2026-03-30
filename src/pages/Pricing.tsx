@@ -161,13 +161,14 @@ export default function Pricing() {
               </ul>
 
               <button
-                className={`w-full py-3 rounded-xl font-semibold text-sm transition-all ${
+                disabled
+                className={`w-full py-3 rounded-xl font-semibold text-sm cursor-not-allowed opacity-75 ${
                   plan.popular
-                    ? "bg-teal hover:bg-teal-dark text-deep-blue hover:shadow-lg hover:shadow-teal/20"
-                    : "glass hover:border-teal/30 text-surface"
+                    ? "bg-teal/60 text-deep-blue"
+                    : "glass text-surface/60"
                 }`}
               >
-                {plan.cta}
+                {plan.cta} — em breve
               </button>
             </motion.div>
             ))}
@@ -190,7 +191,7 @@ export default function Pricing() {
         <div className="flex flex-col gap-4">
           {faqs.map((faq, i) => (
             <motion.details
-              key={i}
+              key={faq.q}
               initial={{ opacity: 0, y: 15 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: i * 0.1 }}

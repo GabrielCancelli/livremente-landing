@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Clock } from "lucide-react";
+import { Clock, Rocket } from "lucide-react";
 
 interface TimeLeft {
   days: number;
@@ -22,6 +22,10 @@ function calculateTimeLeft(): TimeLeft {
   };
 }
 
+function isLaunched(): boolean {
+  return Date.now() >= LAUNCH_DATE;
+}
+
 function FlipUnit({ value, label }: { value: number; label: string }) {
   const display = String(value).padStart(2, "0");
 
@@ -42,14 +46,37 @@ function FlipUnit({ value, label }: { value: number; label: string }) {
 
 export default function CountdownTimer() {
   const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft);
+  const [launched, setLaunched] = useState(isLaunched);
 
   useEffect(() => {
+    if (launched) return;
+
     const timer = setInterval(() => {
-      setTimeLeft(calculateTimeLeft());
+      const newTime = calculateTimeLeft();
+      setTimeLeft(newTime);
+
+      if (isLaunched()) {
+        setLaunched(true);
+        clearInterval(timer);
+      }
     }, 1000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [launched]);
+
+  if (launched) {
+    return (
+      <div className="flex flex-col items-center gap-4">
+        <div className="flex items-center gap-2 text-teal text-base md:text-lg font-semibold tracking-wide">
+          <Rocket size={20} />
+          <span>Já disponível!</span>
+        </div>
+        <p className="text-light-slate text-sm">
+          Baixe agora na App Store ou Google Play.
+        </p>
+      </div>
+    );
+  }
 
   return (
     <div className="flex flex-col items-center gap-6">
@@ -69,3 +96,4 @@ export default function CountdownTimer() {
     </div>
   );
 }
+

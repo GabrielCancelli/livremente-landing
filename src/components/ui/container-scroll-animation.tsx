@@ -43,7 +43,7 @@ export const ContainerScroll = ({
         style={{ perspective: "1200px" }}
       >
         <Header translate={translate} titleComponent={titleComponent} />
-        <PhoneCard rotate={rotate} translate={translate} scale={scale}>
+        <PhoneCard rotate={rotate} scale={scale}>
           {children}
         </PhoneCard>
       </div>
@@ -75,7 +75,6 @@ export const PhoneCard = ({
 }: {
   rotate: MotionValue<number>;
   scale: MotionValue<number>;
-  translate: MotionValue<number>;
   children: React.ReactNode;
 }) => {
   return (

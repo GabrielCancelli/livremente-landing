@@ -151,13 +151,7 @@ export default function About() {
             Gamificação + Comunidade + Ciência + Fé + Bloqueio de Sites + IA
           </p>
           <p className="text-xs text-light-slate mt-2 flex items-center justify-center gap-1">
-            Tudo em português
-            <img
-              src="https://flagcdn.com/w20/br.png"
-              alt="Brasil"
-              loading="lazy"
-              className="w-4 h-3 inline-block rounded-sm"
-            />
+            Tudo em português 🇧🇷
           </p>
         </motion.div>
         </div>
