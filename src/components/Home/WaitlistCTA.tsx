@@ -16,13 +16,19 @@ export default function WaitlistCTA() {
     setStatus("loading");
     setErrorMsg("");
 
+    if (!supabase) {
+      setErrorMsg("Sistema indisponível no momento. Tente novamente mais tarde.");
+      setStatus("error");
+      return;
+    }
+
     const { error } = await supabase.from("waitlist").insert([
       { name, email }
     ]);
 
     if (error) {
       console.error(error);
-      if (error.code === '23505') { // unique violation
+      if (error.code === '23505') {
         setErrorMsg("Este e-mail já está na nossa lista de espera!");
       } else {
         setErrorMsg("Ocorreu um erro ao cadastrar. Tente novamente.");
