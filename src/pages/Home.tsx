@@ -23,7 +23,7 @@ export default function Home() {
               {
                 icon: Sparkles,
                 stat: "90 dias",
-                label: "de neurociência baseada em evidências para o processo de rewiring cerebral",
+                label: "para reprogramar o seu cérebro e construir novos hábitos, com base na ciência",
                 color: "#102A43",
                 bg: "bg-blue-50"
               },
