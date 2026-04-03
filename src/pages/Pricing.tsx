@@ -16,40 +16,60 @@ const plans: Plan[] = [
     name: "Gratuito",
     price: "R$ 0",
     period: "para sempre",
-    description: "Comece sua jornada com o essencial",
+    description: "Para dar o primeiro passo",
     popular: false,
     cta: "Começar Grátis",
     features: [
-      { text: "Streak counter diário", included: true },
-      { text: "Devocional diário (limitado)", included: true },
-      { text: "3 exercícios mentais", included: true },
-      { text: "Comunidade (leitura)", included: true },
-      { text: "Bird Sanctuary (3 pássaros)", included: true },
-      { text: "Konsel AI", included: false },
-      { text: "Todos os exercícios", included: false },
-      { text: "Site Blocking", included: false },
-      { text: "Amizades ilimitadas", included: false },
-      { text: "Comunidade (postagens)", included: false },
+      { text: "Contador de Streaks", included: true },
+      { text: "Diário de Humor", included: true },
+      { text: "Registro de Tentações", included: true },
+      { text: "Botão de SOS (Pânico)", included: true },
+      { text: "Santuário dos Pássaros", included: true },
+      { text: "Juramento Diário", included: true },
+      { text: "Biblioteca (1 Módulo Liberado)", included: true },
+      { text: "Comunidade e Grupos", included: false },
+      { text: "Konsel Chat (IA)", included: false },
+      { text: "Bloqueador de Sites e Apps", included: false },
     ],
   },
   {
-    name: "Premium",
-    price: "R$ 19,90",
+    name: "Mensal",
+    price: "R$ 24,90",
     period: "/mês",
-    description: "Acesso completo a todas as ferramentas",
-    popular: true,
-    cta: "Assinar Premium",
+    description: "Ideal para começar e testar tudo",
+    popular: false,
+    cta: "Assinar Mensal",
     features: [
-      { text: "Streak counter diário", included: true },
-      { text: "Devocional diário completo", included: true },
-      { text: "Todos os 5 exercícios mentais", included: true },
-      { text: "Comunidade completa", included: true },
-      { text: "Bird Sanctuary (8 pássaros)", included: true },
-      { text: "Konsel AI (coaching)", included: true },
-      { text: "Site Blocking nativo", included: true },
-      { text: "Amizades ilimitadas", included: true },
-      { text: "Comunidade (postagens)", included: true },
-      { text: "Suporte prioritário", included: true },
+      { text: "Contador de Streaks", included: true },
+      { text: "Diário de Humor", included: true },
+      { text: "Registro de Tentações", included: true },
+      { text: "Botão de SOS (Pânico)", included: true },
+      { text: "Santuário dos Pássaros", included: true },
+      { text: "Juramento Diário", included: true },
+      { text: "Biblioteca Completa (6 Módulos)", included: true },
+      { text: "Comunidade e Grupos", included: true },
+      { text: "Konsel Chat (IA)", included: true },
+      { text: "Bloqueador de Sites e Apps", included: true },
+    ],
+  },
+  {
+    name: "Anual",
+    price: "R$ 12,49",
+    period: "/mês",
+    description: "Cobrado R$ 149,90 ao ano (R$ 0,41 por dia)",
+    popular: true,
+    cta: "Assinar Anual (50% OFF)",
+    features: [
+      { text: "Contador de Streaks", included: true },
+      { text: "Diário de Humor", included: true },
+      { text: "Registro de Tentações", included: true },
+      { text: "Botão de SOS (Pânico)", included: true },
+      { text: "Santuário dos Pássaros", included: true },
+      { text: "Juramento Diário", included: true },
+      { text: "Biblioteca Completa (6 Módulos)", included: true },
+      { text: "Comunidade e Grupos", included: true },
+      { text: "Konsel Chat (IA)", included: true },
+      { text: "Bloqueador de Sites e Apps", included: true },
     ],
   },
 ];
@@ -75,7 +95,7 @@ const faqs = [
 
 export default function Pricing() {
   return (
-    <main className="pt-24 pb-16">
+    <main className="pt-24 pb-16 bg-surface-bg min-h-screen">
       {/* Header */}
       <section className="section max-w-5xl mx-auto w-full text-center">
         <motion.div
@@ -86,11 +106,11 @@ export default function Pricing() {
           <p className="text-teal text-sm font-semibold tracking-widest uppercase mb-3">
             Planos
           </p>
-          <h1 className="text-4xl md:text-5xl font-extrabold font-[family-name:var(--font-heading)] mb-4">
+          <h1 className="text-4xl md:text-5xl font-extrabold font-[family-name:var(--font-heading)] mb-4 text-text-main">
             Invista na sua{" "}
             <span className="gradient-text">liberdade mental</span>
           </h1>
-          <p className="text-light-slate text-lg">
+          <p className="text-text-muted text-lg">
             Comece grátis. Evolua quando estiver pronto.
           </p>
         </motion.div>
@@ -98,8 +118,8 @@ export default function Pricing() {
 
       {/* Plans */}
       <section className="w-full flex flex-col items-center px-4 md:px-8">
-        <div className="w-full max-w-6xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
+        <div className="w-full max-w-7xl">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 xl:gap-10">
           {plans.map((plan, i) => (
             <motion.div
               key={plan.name}
@@ -107,51 +127,52 @@ export default function Pricing() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: i * 0.15 }}
               viewport={{ once: true }}
-              className={`glass rounded-2xl p-6 md:p-8 lg:p-12 flex flex-col relative w-full ${
-                plan.popular ? "border-teal/40 glow-teal" : ""
+              className={`bg-white rounded-3xl p-6 md:p-8 lg:p-12 flex flex-col relative w-full border ${
+                plan.popular ? "border-teal/40 glow-teal shadow-xl" : "border-slate-200 shadow-md"
               }`}
             >
               {plan.popular && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
-                  <span className="bg-teal text-deep-blue text-xs font-bold px-4 py-1.5 rounded-full flex items-center gap-1">
-                    <Sparkles size={12} />
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                  <span className="bg-teal text-white text-xs font-bold px-4 py-1.5 rounded-full flex items-center gap-1 shadow-lg shadow-teal/30">
+                    <Sparkles size={12} fill="currentColor" />
                     Mais Popular
                   </span>
                 </div>
               )}
 
               <div className="mb-6">
-                <h3 className="text-lg font-bold font-[family-name:var(--font-heading)] mb-1">
+                <h3 className="text-xl font-bold font-[family-name:var(--font-heading)] mb-1 text-text-main">
                   {plan.name}
                 </h3>
-                <p className="text-xs text-light-slate">{plan.description}</p>
+                <p className="text-sm text-text-muted">{plan.description}</p>
               </div>
 
               <div className="mb-6">
-                <span className="text-4xl font-extrabold font-[family-name:var(--font-heading)]">
+                <span className="text-5xl font-extrabold font-[family-name:var(--font-heading)] text-deep-blue">
                   {plan.price}
                 </span>
-                <span className="text-light-slate text-sm ml-1">
+                <span className="text-text-muted font-medium ml-1">
                   {plan.period}
                 </span>
               </div>
 
-              <ul className="flex-1 flex flex-col gap-3 mb-6 md:mb-8">
+              <ul className="flex-1 flex flex-col gap-4 mb-8">
                 {plan.features.map((feature) => (
                   <li key={feature.text} className="flex items-center gap-3">
                     {feature.included ? (
-                      <Check size={16} className="text-teal shrink-0" />
+                      <div className="bg-teal/10 p-1 rounded-full shrink-0">
+                        <Check size={14} className="text-teal" strokeWidth={3} />
+                      </div>
                     ) : (
-                      <X
-                        size={16}
-                        className="text-light-slate/40 shrink-0"
-                      />
+                      <div className="p-1 rounded-full shrink-0">
+                        <X size={14} className="text-slate-300" strokeWidth={3} />
+                      </div>
                     )}
                     <span
-                      className={`text-sm ${
+                      className={`text-sm font-medium ${
                         feature.included
-                          ? "text-surface"
-                          : "text-light-slate/40"
+                          ? "text-text-main"
+                          : "text-slate-400"
                       }`}
                     >
                       {feature.text}
@@ -162,13 +183,13 @@ export default function Pricing() {
 
               <button
                 disabled
-                className={`w-full py-3 rounded-xl font-semibold text-sm cursor-not-allowed opacity-75 ${
+                className={`w-full py-4 rounded-xl font-bold text-sm cursor-not-allowed opacity-75 transition-all ${
                   plan.popular
-                    ? "bg-teal/60 text-deep-blue"
-                    : "glass text-surface/60"
+                    ? "bg-deep-blue text-white shadow-lg"
+                    : "bg-slate-100 text-slate-500"
                 }`}
               >
-                {plan.cta} — em breve
+                {plan.cta} — Em Breve
               </button>
             </motion.div>
             ))}
@@ -177,39 +198,39 @@ export default function Pricing() {
       </section>
 
       {/* FAQ */}
-      <section className="w-full flex flex-col items-center px-4 md:px-8">
+      <section className="w-full flex flex-col items-center px-4 md:px-8 mt-24">
         <div className="w-full max-w-4xl">
           <motion.h2
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-2xl md:text-3xl font-bold font-[family-name:var(--font-heading)] text-center mb-10"
-        >
-          Perguntas <span className="gradient-text">frequentes</span>
-        </motion.h2>
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="text-2xl md:text-3xl font-bold font-[family-name:var(--font-heading)] text-center mb-10 text-text-main"
+          >
+            Perguntas <span className="gradient-text">frequentes</span>
+          </motion.h2>
 
-        <div className="flex flex-col gap-4">
-          {faqs.map((faq, i) => (
-            <motion.details
-              key={faq.q}
-              initial={{ opacity: 0, y: 15 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
-              viewport={{ once: true }}
-              className="glass rounded-xl group"
-            >
-              <summary className="cursor-pointer p-6 lg:p-8 font-medium text-base list-none flex items-center justify-between">
-                {faq.q}
-                <span className="text-teal transition-transform group-open:rotate-45 text-xl">
-                  +
-                </span>
-              </summary>
-              <div className="px-6 pb-6 lg:px-8 lg:pb-8 text-base text-light-slate leading-relaxed">
-                {faq.a}
-              </div>
-            </motion.details>
-          ))}
-        </div>
+          <div className="flex flex-col gap-4">
+            {faqs.map((faq, i) => (
+              <motion.details
+                key={faq.q}
+                initial={{ opacity: 0, y: 15 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: i * 0.1 }}
+                viewport={{ once: true }}
+                className="bg-white border border-slate-200 rounded-2xl group shadow-sm"
+              >
+                <summary className="cursor-pointer p-6 lg:p-8 font-semibold text-lg text-text-main list-none flex items-center justify-between">
+                  {faq.q}
+                  <span className="text-teal bg-teal/10 rounded-full p-1 transition-transform group-open:rotate-45 block">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                  </span>
+                </summary>
+                <div className="px-6 pb-6 lg:px-8 lg:pb-8 text-base text-text-muted leading-relaxed font-medium">
+                  {faq.a}
+                </div>
+              </motion.details>
+            ))}
+          </div>
         </div>
       </section>
     </main>

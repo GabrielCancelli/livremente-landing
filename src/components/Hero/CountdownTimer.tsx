@@ -8,7 +8,7 @@ interface TimeLeft {
   seconds: number;
 }
 
-const LAUNCH_DATE = new Date("2026-04-04T00:00:00-03:00").getTime();
+const LAUNCH_DATE = new Date("2026-05-04T00:00:00-03:00").getTime();
 
 function calculateTimeLeft(): TimeLeft {
   const now = Date.now();
@@ -31,13 +31,13 @@ function FlipUnit({ value, label }: { value: number; label: string }) {
 
   return (
     <div className="flex flex-col items-center gap-2">
-      <div className="relative w-16 h-20 md:w-20 md:h-24 glass rounded-xl flex items-center justify-center overflow-hidden">
-        <span className="text-3xl md:text-4xl font-bold font-[family-name:var(--font-heading)] text-surface tabular-nums">
+      <div className="relative w-16 h-20 md:w-20 md:h-24 bg-white border border-slate-200 shadow-sm rounded-xl flex items-center justify-center overflow-hidden">
+        <span className="text-3xl md:text-4xl font-bold font-[family-name:var(--font-heading)] text-deep-blue tabular-nums">
           {display}
         </span>
-        <div className="absolute inset-x-0 top-1/2 h-[1px] bg-deep-blue/30" />
+        <div className="absolute inset-x-0 top-1/2 h-[1px] bg-slate-100" />
       </div>
-      <span className="text-xs md:text-sm text-light-slate uppercase tracking-widest">
+      <span className="text-xs md:text-sm text-text-muted font-semibold uppercase tracking-widest">
         {label}
       </span>
     </div>
@@ -71,7 +71,7 @@ export default function CountdownTimer() {
           <Rocket size={20} />
           <span>Já disponível!</span>
         </div>
-        <p className="text-light-slate text-sm">
+        <p className="text-text-muted text-sm font-medium">
           Baixe agora na App Store ou Google Play.
         </p>
       </div>
@@ -80,7 +80,7 @@ export default function CountdownTimer() {
 
   return (
     <div className="flex flex-col items-center gap-6">
-      <div className="flex items-center gap-2 text-light-slate text-sm md:text-base tracking-wide">
+      <div className="flex items-center gap-2 text-text-muted text-sm md:text-base tracking-wide font-medium">
         <Clock size={16} className="text-teal" />
         <span>Lançamento em</span>
       </div>

@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import Navbar from "@/components/Layout/Navbar";
 import Footer from "@/components/Layout/Footer";
 import Home from "@/pages/Home";
-import Features from "@/pages/Features";
 import About from "@/pages/About";
 import Pricing from "@/pages/Pricing";
 import Privacy from "@/pages/Privacy";
@@ -25,7 +24,6 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/features" element={<Features />} />
         <Route path="/about" element={<About />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/privacy" element={<Privacy />} />

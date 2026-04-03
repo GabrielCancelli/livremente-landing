@@ -9,13 +9,18 @@
   --color-teal-glow: #0FB3A340;
   --color-graphite: #1F2933;
   --color-graphite-light: #2A3642;
-  --color-light-slate: #9FB3C8;
   --color-alert-red: #FF4B4B;
   --color-gain-gold: #FFC107;
-  --color-surface: #F0F4F8;
-  --color-white: #FFFFFF;
-  --color-glass: rgba(31, 41, 51, 0.6);
-  --color-glass-border: rgba(159, 179, 200, 0.15);
+  
+  /* Light Theme Specifics */
+  --color-surface-bg: #F8FAFC;
+  --color-surface-card: #FFFFFF;
+  --color-text-main: #0F172A;
+  --color-text-muted: #475569;
+  
+  /* Glass in Light Mode */
+  --color-glass: rgba(255, 255, 255, 0.85);
+  --color-glass-border: rgba(15, 23, 42, 0.1);
 
   --font-heading: "Poppins", sans-serif;
   --font-body: "Inter", sans-serif;
@@ -35,8 +40,8 @@
   
   body {
     font-family: var(--font-body);
-    background-color: var(--color-deep-blue);
-    color: var(--color-surface);
+    background-color: var(--color-surface-bg);
+    color: var(--color-text-main);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
@@ -45,6 +50,11 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     font-weight: 700;
+    color: var(--color-text-main);
+  }
+  
+  p {
+    color: var(--color-text-muted);
   }
   
   a {
@@ -63,18 +73,17 @@
   }
   
   .gradient-text {
-    background: linear-gradient(135deg, var(--color-teal) 0%, #14D4C0 50%, var(--color-gain-gold) 100%);
+    background: linear-gradient(135deg, var(--color-deep-blue) 0%, var(--color-teal) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   
-  .gradient-bg {
-    background: linear-gradient(180deg, var(--color-deep-blue) 0%, var(--color-graphite) 100%);
-  }
-  
   .glow-teal {
     box-shadow: 0 0 40px var(--color-teal-glow), 0 0 80px rgba(15, 179, 163, 0.15);
+  }
+  .glow-blue {
+    box-shadow: 0 0 40px rgba(16, 42, 67, 0.15), 0 0 80px rgba(16, 42, 67, 0.05);
   }
 }
 
@@ -84,16 +93,16 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-deep-blue);
+  background: var(--color-surface-bg);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-graphite-light);
+  background: #CBD5E1;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-light-slate);
+  background: #94A3B8;
 }
 
 /* ========== SECTION SPACING ========== */
