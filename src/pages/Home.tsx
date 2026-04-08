@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Sparkles, Timer, Shield } from "lucide-react";
 import HeroScroll from "@/components/Hero/HeroScroll";
@@ -5,6 +6,20 @@ import FeatureShowcase from "@/components/Home/FeatureShowcase";
 import WaitlistCTA from "@/components/Home/WaitlistCTA";
 
 export default function Home() {
+  useEffect(() => {
+    // Se entrar na página com o hash #waitlist, rola até ele e limpa a URL
+    if (window.location.hash === "#waitlist") {
+      const element = document.getElementById("waitlist");
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth" });
+          // Limpa o hash para evitar scroll indesejado em futuros refresh
+          window.history.replaceState(null, "", "/");
+        }, 300); // Delay ligeiramente maior para garantir renderização completa
+      }
+    }
+  }, []);
+
   return (
     <main className="bg-surface-bg min-h-screen">
       {/* Hero + Phone Mockup + Countdown */}

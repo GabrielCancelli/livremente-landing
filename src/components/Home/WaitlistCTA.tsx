@@ -43,7 +43,7 @@ export default function WaitlistCTA() {
   };
 
   return (
-    <section className="w-full flex flex-col items-center px-4 md:px-8 py-24 bg-surface-bg mt-12">
+    <section id="waitlist" className="w-full flex flex-col items-center px-4 md:px-8 py-24 bg-surface-bg mt-12">
       <div className="w-full max-w-4xl">
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
