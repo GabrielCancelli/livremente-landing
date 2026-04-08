@@ -97,10 +97,10 @@ export default function Privacy() {
               <ul className="list-disc list-inside text-light-slate space-y-1 ml-2">
                 <li>Fornecer e melhorar as funcionalidades do aplicativo</li>
                 <li>Personalizar sua experiência (conteúdo, lembretes)</li>
-                <li>Enviar notificações push (com seu consentimento via OneSignal)</li>
-                <li>Analisar padrões de uso para melhoria do produto (Amplitude)</li>
-                <li>Monitorar e corrigir erros técnicos (Sentry)</li>
-                <li>Gerenciar sua assinatura e conteúdo premium (RevenueCat)</li>
+                <li>Enviar notificações push (com seu consentimento)</li>
+                <li>Analisar padrões de uso para melhoria do produto</li>
+                <li>Monitorar e corrigir erros técnicos</li>
+                <li>Gerenciar sua assinatura e conteúdo premium</li>
                 <li>Moderar conteúdo da comunidade para segurança dos usuários</li>
               </ul>
             </div>
@@ -137,50 +137,21 @@ export default function Privacy() {
               </h2>
               <p className="text-light-slate leading-relaxed mb-3">
                 Nós <strong>não vendemos</strong> seus dados pessoais.
-                Compartilhamos dados apenas com os seguintes prestadores de
-                serviço, estritamente para a operação do aplicativo:
+                Compartilhamos dados apenas com prestadores de serviço
+                estritamente necessários para a operação do aplicativo,
+                incluindo:
               </p>
-              <div className="overflow-x-auto">
-                <table className="w-full text-sm text-light-slate">
-                  <thead>
-                    <tr className="border-b border-glass-border text-left">
-                      <th className="py-2 pr-4 text-surface font-semibold">Serviço</th>
-                      <th className="py-2 pr-4 text-surface font-semibold">Finalidade</th>
-                      <th className="py-2 text-surface font-semibold">País</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-glass-border">
-                    <tr>
-                      <td className="py-2 pr-4">Supabase</td>
-                      <td className="py-2 pr-4">Banco de dados, autenticação</td>
-                      <td className="py-2">EUA</td>
-                    </tr>
-                    <tr>
-                      <td className="py-2 pr-4">RevenueCat</td>
-                      <td className="py-2 pr-4">Gestão de assinaturas</td>
-                      <td className="py-2">EUA</td>
-                    </tr>
-                    <tr>
-                      <td className="py-2 pr-4">OneSignal</td>
-                      <td className="py-2 pr-4">Notificações push</td>
-                      <td className="py-2">EUA</td>
-                    </tr>
-                    <tr>
-                      <td className="py-2 pr-4">Amplitude</td>
-                      <td className="py-2 pr-4">Analytics de produto</td>
-                      <td className="py-2">EUA</td>
-                    </tr>
-                    <tr>
-                      <td className="py-2 pr-4">Sentry</td>
-                      <td className="py-2 pr-4">Monitoramento de erros</td>
-                      <td className="py-2">EUA</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+              <ul className="list-disc list-inside text-light-slate space-y-1 ml-2">
+                <li>Provedores de hospedagem e infraestrutura em nuvem</li>
+                <li>Processadores de pagamento e gestão de assinaturas</li>
+                <li>Serviços de notificações push</li>
+                <li>Ferramentas de analytics de produto</li>
+                <li>Serviços de monitoramento de erros e estabilidade</li>
+              </ul>
               <p className="text-light-slate leading-relaxed mt-3 text-sm">
-                Todos os prestadores listados possuem políticas de privacidade
-                próprias e operam sob cláusulas contratuais de proteção de dados.
+                Esses prestadores são contratualmente obrigados a proteger seus
+                dados pessoais e processá-los apenas para as finalidades
+                autorizadas. Cada um possui políticas de privacidade próprias.
               </p>
             </div>
 
@@ -209,10 +180,10 @@ export default function Privacy() {
               </p>
               <ul className="list-disc list-inside text-light-slate space-y-1 ml-2 mt-2">
                 <li>Criptografia em trânsito (TLS/HTTPS)</li>
-                <li>Row-Level Security (RLS) no banco de dados</li>
-                <li>Armazenamento seguro de tokens de autenticação</li>
-                <li>Rate limiting para prevenção de abuso</li>
-                <li>Proteção contra senhas vazadas no fluxo de autenticação</li>
+                <li>Controles de acesso e isolamento de dados por usuário</li>
+                <li>Armazenamento seguro de credenciais e tokens</li>
+                <li>Infraestrutura em nuvem segura com monitoramento contínuo</li>
+                <li>Medidas de prevenção contra abuso e acesso não autorizado</li>
               </ul>
             </div>
 
