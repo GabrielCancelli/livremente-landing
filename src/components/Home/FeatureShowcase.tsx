@@ -16,7 +16,7 @@ const features: Feature[] = [
   {
     id: "bloqueador",
     title: "Bloqueador de Sites e Apps",
-    description: "Recupere o controle do seu tempo. O Escudo de Foco bloqueia distrações na raiz, impedindo que você acesse pornografia e conteúdos que não agregam valor à sua jornada.",
+    description: "Recupere o controle do seu tempo. O Escudo de Foco bloqueia distrações na raiz, impedindo que você acesse sites e apps que são gatilhos, protegendo sua jornada de recuperação.",
     image: "/mockup-escudo.PNG",
     reverse: false,
     color: "bg-blue-50 text-deep-blue"

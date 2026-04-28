@@ -36,7 +36,7 @@ export default function Privacy() {
               <p className="text-light-slate leading-relaxed">
                 O LivreMente ("nós", "nosso" ou "aplicativo") é um aplicativo
                 móvel de saúde mental focado em ajudar usuários no processo de
-                libertação do vício em pornografia, por meio de ferramentas
+                libertação de hábitos digitais nocivos, por meio de ferramentas
                 inteligentes, comunidade de apoio, acompanhamento com IA e
                 gamificação. Devido à natureza sensível do tema tratado, levamos
                 a proteção dos seus dados com extrema seriedade. Esta Política
@@ -57,7 +57,7 @@ export default function Privacy() {
                 2.1 Dados fornecidos por você
               </h3>
               <ul className="list-disc list-inside text-light-slate space-y-1 ml-2">
-                <li>Nome de exibição (ou apelido), idade e e-mail (ao criar conta)</li>
+                <li>Nome de exibição (ou apelido) e e-mail (ao criar conta)</li>
                 <li>Respostas do questionário de autoavaliação de dependência (opcional)</li>
                 <li>Publicações e mensagens na comunidade de apoio</li>
                 <li>Mensagens diretas entre usuários</li>
@@ -238,8 +238,8 @@ export default function Privacy() {
               </h2>
               <p className="text-light-slate leading-relaxed">
                 O LivreMente é classificado para maiores de 17 anos devido à
-                natureza do conteúdo abordado (recuperação de vício em
-                pornografia). Não coletamos intencionalmente dados de menores de
+                natureza do conteúdo abordado (recuperação de vícios
+                comportamentais). Não coletamos intencionalmente dados de menores de
                 17 anos. Caso identifiquemos tal coleta, os dados serão excluídos
                 imediatamente.
               </p>

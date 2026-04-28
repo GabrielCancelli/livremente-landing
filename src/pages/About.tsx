@@ -73,7 +73,7 @@ export default function About() {
               A Missão
             </h2>
             <p className="text-text-muted leading-relaxed font-medium relative z-10">
-              Libertar as pessoas do consumo descontrolado de pornografia, entregando uma plataforma inteligente capaz de quebrar o ciclo agudo do vício, fortalecer o caráter moral e instaurar raízes duradouras de domínio próprio.
+              Libertar as pessoas de hábitos digitais nocivos, entregando uma plataforma inteligente capaz de quebrar o ciclo agudo do vício, fortalecer o caráter moral e instaurar raízes duradouras de domínio próprio.
             </p>
           </motion.div>
 
@@ -90,7 +90,7 @@ export default function About() {
               A Visão
             </h2>
             <p className="text-text-muted leading-relaxed font-medium relative z-10">
-              Tornar-se o maior e mais eficiente ecossistema tecnológico contra a pornografia no Brasil, unindo bloqueios impenetráveis, neurobiologia computacional humana e uma comunidade baseada nos mesmos princípios e valores éticos.
+              Tornar-se o maior e mais eficiente ecossistema tecnológico de libertação digital no Brasil, unindo bloqueios impenetráveis, neurobiologia computacional humana e uma comunidade baseada nos mesmos princípios e valores éticos.
             </p>
           </motion.div>
         </div>

@@ -11,8 +11,8 @@ export default function HeroScroll() {
               Saúde Mental Reimaginada
             </p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold font-[family-name:var(--font-heading)] leading-tight text-text-main">
-              Liberte-se da{" "}
-              <span className="gradient-text">pornografia</span>
+              Liberte-se.{" "}
+              <span className="gradient-text">De verdade.</span>
             </h1>
             <p className="text-text-muted text-base md:text-xl max-w-2xl mx-auto leading-relaxed">
               Ferramentas inteligentes, comunidade real e progresso gamificado.
