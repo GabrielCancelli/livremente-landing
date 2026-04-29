@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import GradientText from "@/components/ui/GradientText";
 import { Check, X, Sparkles } from "lucide-react";
 
 interface Plan {
@@ -108,7 +109,7 @@ export default function Pricing() {
           </p>
           <h1 className="text-4xl md:text-5xl font-extrabold font-[family-name:var(--font-heading)] mb-4 text-text-main">
             Invista na sua{" "}
-            <span className="gradient-text">liberdade mental</span>
+            <GradientText colors={["#0FB3A3", "#0D9E90", "#102A43", "#0FB3A3"]} animationSpeed={6}>liberdade mental</GradientText>
           </h1>
           <p className="text-text-muted text-lg">
             Comece grátis. Evolua quando estiver pronto.
@@ -206,7 +207,7 @@ export default function Pricing() {
             viewport={{ once: true }}
             className="text-2xl md:text-3xl font-bold font-[family-name:var(--font-heading)] text-center mb-10 text-text-main"
           >
-            Perguntas <span className="gradient-text">frequentes</span>
+            Perguntas <GradientText colors={["#0FB3A3", "#0D9E90", "#102A43", "#0FB3A3"]} animationSpeed={6}>frequentes</GradientText>
           </motion.h2>
 
           <div className="flex flex-col gap-4">

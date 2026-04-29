@@ -1,4 +1,5 @@
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
+import GradientText from "@/components/ui/GradientText";
 import CountdownTimer from "./CountdownTimer";
 
 export default function HeroScroll() {
@@ -12,7 +13,7 @@ export default function HeroScroll() {
             </p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold font-[family-name:var(--font-heading)] leading-tight text-text-main">
               Reconquiste{" "}
-              <span className="gradient-text">sua mente.</span>
+              <GradientText colors={["#0FB3A3", "#0D9E90", "#102A43", "#0FB3A3"]} animationSpeed={6}>sua mente.</GradientText>
             </h1>
             <p className="text-text-muted text-base md:text-xl max-w-2xl mx-auto leading-relaxed">
               Ciência, comunidade e ferramentas reais para quebrar o ciclo

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import GradientText from "@/components/ui/GradientText";
 import {
   Heart,
   Brain,
@@ -50,7 +51,7 @@ export default function About() {
             O Propósito
           </p>
           <h1 className="text-4xl md:text-5xl font-extrabold font-[family-name:var(--font-heading)] mb-4 text-text-main">
-            Por que o <span className="gradient-text">LivreMente</span> existe?
+            Por que o <GradientText colors={["#0FB3A3", "#0D9E90", "#102A43", "#0FB3A3"]} animationSpeed={6}>LivreMente</GradientText> existe?
           </h1>
         </motion.div>
         </div>
@@ -106,7 +107,7 @@ export default function About() {
           viewport={{ once: true }}
           className="text-2xl md:text-3xl font-bold font-[family-name:var(--font-heading)] text-center mb-10 text-text-main"
         >
-          Pilares <span className="gradient-text">Fundamentais</span>
+          Pilares <GradientText colors={["#0FB3A3", "#0D9E90", "#102A43", "#0FB3A3"]} animationSpeed={6}>Fundamentais</GradientText>
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-8 w-full">
