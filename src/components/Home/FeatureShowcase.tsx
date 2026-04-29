@@ -15,56 +15,56 @@ interface Feature {
 const features: Feature[] = [
   {
     id: "bloqueador",
-    title: "Bloqueador de Sites e Apps",
-    description: "Recupere o controle do seu tempo. O Escudo de Foco bloqueia distrações na raiz, impedindo que você acesse sites e apps que são gatilhos, protegendo sua jornada de recuperação.",
+    title: "Antes que o gatilho chegue, o Escudo já agiu.",
+    description: "Bloqueia sites e apps prejudiciais antes que você precise usar força de vontade. Proteção automática que trabalha por você enquanto você foca no que importa.",
     image: "/mockup-escudo.PNG",
     reverse: false,
     color: "bg-blue-50 text-deep-blue"
   },
   {
     id: "konsel",
-    title: "Konsel IA: Seu Conselheiro 24/7",
-    description: "O Konsel está sempre à disposição para te ouvir, oferecer conselhos baseados em neurociência e guiar você em momentos críticos de ansiedade ou gatilhos.",
+    title: "Seu conselheiro que nunca dorme.",
+    description: "Treinado com neurociência e disponível 24/7 para te guiar nos momentos mais difíceis. Sem julgamento. O Konsel IA te ouve, orienta e te ajuda a sair do piloto automático.",
     image: "/mockup-konsel.png",
     reverse: true,
     color: "bg-teal-50/50 text-teal-dark"
   },
   {
     id: "emergencia",
-    title: "Botão SOS de Emergência",
-    description: "Bateu a fissura? Um toque no botão de emergência ativa a quebra de padrão com exercícios de respiração e lembretes instantâneos, desarmando o impulso na hora.",
+    title: "3 segundos entre você e a recaída.",
+    description: "Um toque ativa respiração guiada, lembretes e técnicas de quebra de padrão. O impulso passa. E você sai mais forte do outro lado.",
     image: "/mockup-sos.png",
     reverse: false,
     color: "bg-red-50 text-alert-red"
   },
   {
     id: "comunidade",
-    title: "Irmandade e Fórum",
-    description: "Você não está lutando sozinho. Troque experiências, entre em grupos de apoio focados, compartilhe sua vitória e converse em tempo real com irmãos na mesma jornada de libertação.",
+    title: "Ninguém vence sozinho.",
+    description: "Grupos de apoio, conversas em tempo real e uma irmandade que entende a sua luta. Porque está na mesma. Troque experiências, compartilhe vitórias e cresça junto.",
     image: "/mockup-comunidade.PNG",
     reverse: true,
     color: "bg-indigo-50 text-indigo-700"
   },
   {
     id: "analise",
-    title: "Análise dos seus Desafios",
-    description: "Acompanhe os dados reais do seu progresso. Descubra seus padrões de vulnerabilidade, streaks invictos, horários críticos e receba insights personalizados para ajustar sua estratégia humana.",
+    title: "Dados que revelam seus padrões.",
+    description: "Veja seus horários críticos, streaks, gatilhos mais frequentes e use os insights para se antecipar. Quando você entende o padrão, o padrão perde o poder.",
     image: "/mockup-analise.PNG",
     reverse: false,
     color: "bg-violet-50 text-violet-700"
   },
   {
     id: "conteudos",
-    title: "Biblioteca de Conteúdos Diários",
-    description: "Aprenda tudo sobre o vício e como o cérebro funciona. Trilhas educacionais estruturadas, desafios práticos e devocionais guiados para reconstruir sua mentalidade passo a passo.",
+    title: "Entenda o cérebro. Mude o comportamento.",
+    description: "Trilhas educacionais, desafios diários e ciência acessível sobre como o vício funciona e como superá-lo. Conhecimento é a arma mais poderosa que você tem.",
     image: "/mokup-library.png",
     reverse: true,
     color: "bg-orange-50 text-orange-700"
   },
   {
     id: "diario",
-    title: "Diário de Humor e Tentações",
-    description: "Registre diariamente como você se sente e mapeie catalogando cada tentação. Entender os gatilhos é o primeiro passo para dominar os impulsos antes que eles controlem você.",
+    title: "Mapear é o primeiro passo para dominar.",
+    description: "Registre humor, tentações e gatilhos diariamente. Quando você entende o que te derruba, você aprende a se levantar antes de cair.",
     images: [
       "/mockup-diario1.PNG",
       "/mockup-diario2.PNG",
@@ -78,8 +78,8 @@ const features: Feature[] = [
   },
   {
     id: "juramento",
-    title: "Juramento Pessoal",
-    description: "Assine seu compromisso definitivo com a liberdade. O juramento fica guardado e atua como uma âncora emocional constante lembrando seus motivos e tudo o que você tem a perder ao retroceder.",
+    title: "Uma promessa que pesa.",
+    description: "Registre seu juramento pessoal: sua âncora emocional para quando a tentação vier. Ela lembra por que você começou e tudo que você tem a perder ao retroceder.",
     image: "/mockup-juramento.PNG",
     reverse: true,
     color: "bg-emerald-50 text-emerald-700"

@@ -57,13 +57,13 @@ export default function WaitlistCTA() {
 
           <div className="relative z-10 max-w-2xl mx-auto flex flex-col items-center">
             <span className="inline-block px-4 py-1.5 rounded-full bg-white/10 text-teal font-semibold text-sm mb-6 uppercase tracking-wider backdrop-blur-sm border border-white/10">
-              Acesso Antecipado
+              Lançamento Iminente
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-4 leading-tight font-[family-name:var(--font-heading)]">
-              Pronto para virar o jogo?
+              O dia que você muda tudo começa aqui.
             </h2>
             <p className="text-white/70 text-lg mb-10 font-medium">
-              Seja o primeiro a descobrir quando o LivreMente for lançado. Inscreva-se na lista de espera e receba as atualizações exclusivas no seu e-mail.
+              Entre na lista de espera e seja o primeiro a ter acesso ao LivreMente quando ele for lançado.
             </p>
 
             {status === "success" ? (
@@ -112,7 +112,7 @@ export default function WaitlistCTA() {
                   {status === "loading" ? (
                     <div className="w-5 h-5 border-2 border-deep-blue border-t-transparent rounded-full animate-spin"></div>
                   ) : (
-                    "Quero ser notificado"
+                    "Entrar na lista"
                   )}
                 </button>
               </form>

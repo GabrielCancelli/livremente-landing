@@ -8,16 +8,15 @@ export default function HeroScroll() {
         titleComponent={
           <div className="flex flex-col items-center gap-4 text-center">
             <p className="text-sm md:text-base text-teal font-semibold tracking-widest uppercase">
-              Saúde Mental Reimaginada
+              Para quem quer mais do que só parar
             </p>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold font-[family-name:var(--font-heading)] leading-tight text-text-main">
-              Liberte-se.{" "}
-              <span className="gradient-text">De verdade.</span>
+              Reconquiste{" "}
+              <span className="gradient-text">sua mente.</span>
             </h1>
             <p className="text-text-muted text-base md:text-xl max-w-2xl mx-auto leading-relaxed">
-              Ferramentas inteligentes, comunidade real e progresso gamificado.
-              Tudo o que você precisa para vencer o vício, quebrar hábitos
-              prejudiciais e reconquistar o controle da sua mente.
+              Ciência, comunidade e ferramentas reais para quebrar o ciclo
+              de uma vez por todas. E se tornar quem você sabe que pode ser.
             </p>
           </div>
         }
