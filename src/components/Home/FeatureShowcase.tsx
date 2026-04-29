@@ -173,7 +173,7 @@ export default function FeatureShowcase() {
               <span className={`inline-block px-4 py-1.5 rounded-full text-sm font-semibold ${feature.color}`}>
                 Recurso Principal
               </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-text-main">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-snug text-text-main">
                 {feature.title}
               </h2>
               <p className="text-lg md:text-xl text-text-muted leading-relaxed">
