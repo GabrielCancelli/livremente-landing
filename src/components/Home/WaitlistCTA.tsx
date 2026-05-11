@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Download, Star, Shield, Zap } from "lucide-react";
+import { Star, Shield, Zap } from "lucide-react";
 
 const APP_STORE_URL = "https://apps.apple.com/br/app/livremente/id6759587050";
 
