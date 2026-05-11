@@ -170,8 +170,8 @@ export default function Terms() {
               </h3>
               <p className="text-light-slate leading-relaxed">
                 O App oferece funcionalidades gratuitas e premium. As assinaturas
-                são processadas pela Apple App Store ou Google Play Store,
-                conforme a plataforma utilizada. Os preços são exibidos na moeda
+                são processadas pela Apple App Store.
+                Os preços são exibidos na moeda
                 local antes da confirmação da compra.
               </p>
 
@@ -188,8 +188,7 @@ export default function Terms() {
                 6.3 Cancelamento
               </h3>
               <p className="text-light-slate leading-relaxed">
-                Cancelamentos devem ser feitos nas configurações da App Store ou
-                Google Play Store. Não processamos cancelamentos diretamente. Após
+                Cancelamentos devem ser feitos nas configurações da App Store. Não processamos cancelamentos diretamente. Após
                 o cancelamento, você mantém acesso até o final do período pago.
               </p>
 
@@ -197,8 +196,8 @@ export default function Terms() {
                 6.4 Reembolso
               </h3>
               <p className="text-light-slate leading-relaxed">
-                Reembolsos seguem as políticas da Apple e do Google. Solicite
-                diretamente pela loja onde realizou a compra.
+                Reembolsos seguem as políticas da Apple. Solicite
+                diretamente pela App Store.
               </p>
             </div>
 

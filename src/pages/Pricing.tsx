@@ -80,7 +80,7 @@ const plans: Plan[] = [
 const faqs = [
   {
     q: "Posso cancelar a qualquer momento?",
-    a: "Sim! Sem multa, sem burocracia. Cancele direto pelo app ou pela loja (App Store / Google Play).",
+    a: "Sim! Sem multa, sem burocracia. Cancele direto pelo app ou pela App Store.",
   },
   {
     q: "A versão gratuita realmente funciona?",
@@ -88,7 +88,7 @@ const faqs = [
   },
   {
     q: "Como funciona o pagamento?",
-    a: "O pagamento é processado via App Store (iOS) ou Google Play (Android) com total segurança. Suportamos Pix, cartão e boleto via plataformas das lojas.",
+    a: "O pagamento é processado via App Store (iOS) com total segurança. Suportamos os métodos de pagamento aceitos pela Apple.",
   },
   {
     q: "Tem desconto no plano anual?",
