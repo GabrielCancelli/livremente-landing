@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import GradientText from "@/components/ui/GradientText";
 import { Check, X, Sparkles } from "lucide-react";
 
+const APP_STORE_URL = "https://apps.apple.com/br/app/livremente/id6759587050";
+
 interface Plan {
   name: string;
   price: string;
@@ -90,7 +92,7 @@ const faqs = [
   },
   {
     q: "Tem desconto no plano anual?",
-    a: "Sim! O plano anual custa R$ 149,90/ano (economia de R$ 89). Disponível após o lançamento.",
+    a: "Sim! O plano anual custa R$ 149,90/ano (economia de R$ 89). Disponível diretamente no app.",
   },
 ];
 
@@ -182,16 +184,18 @@ export default function Pricing() {
                 ))}
               </ul>
 
-              <button
-                disabled
-                className={`w-full py-4 rounded-xl font-bold text-sm cursor-not-allowed opacity-75 transition-all ${
+              <a
+                href={APP_STORE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`w-full py-4 rounded-xl font-bold text-sm transition-all text-center block ${
                   plan.popular
-                    ? "bg-deep-blue text-white shadow-lg"
-                    : "bg-slate-100 text-slate-500"
+                    ? "bg-deep-blue hover:bg-deep-blue/90 text-white shadow-lg hover:shadow-xl"
+                    : "bg-slate-100 hover:bg-slate-200 text-slate-700"
                 }`}
               >
-                {plan.cta} — Em Breve
-              </button>
+                {plan.cta}
+              </a>
             </motion.div>
             ))}
           </div>
