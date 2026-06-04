@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Star, Shield, Zap } from "lucide-react";
 import AndroidWaitlistModal from "@/components/Download/AndroidWaitlistModal";
+import { trackAppStoreClick, trackEvent } from "@/lib/metaPixel";
 
 const APP_STORE_URL = "https://apps.apple.com/br/app/livremente/id6759587050";
 
@@ -11,6 +12,7 @@ export default function Download() {
   useEffect(() => {
     const prev = document.title;
     document.title = "Baixe o LivreMente";
+    trackEvent("ViewContent", { content_name: "Baixar (Ads Landing)" });
     return () => {
       document.title = prev;
     };
@@ -50,6 +52,7 @@ export default function Download() {
             href={APP_STORE_URL}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackAppStoreClick("baixar")}
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
             className="w-full bg-white hover:bg-slate-50 text-deep-blue font-bold px-6 py-5 rounded-2xl transition-all shadow-lg flex items-center justify-center gap-3 text-base"

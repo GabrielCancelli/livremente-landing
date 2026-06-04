@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import GradientText from "@/components/ui/GradientText";
 import { Check, X, Sparkles } from "lucide-react";
+import { trackAppStoreClick } from "@/lib/metaPixel";
 
 const APP_STORE_URL = "https://apps.apple.com/br/app/livremente/id6759587050";
 
@@ -188,6 +189,7 @@ export default function Pricing() {
                 href={APP_STORE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackAppStoreClick(`pricing-${plan.name.toLowerCase()}`)}
                 className={`w-full py-4 rounded-xl font-bold text-sm transition-all text-center block ${
                   plan.popular
                     ? "bg-deep-blue hover:bg-deep-blue/90 text-white shadow-lg hover:shadow-xl"

@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { CheckCircle2, AlertCircle, X } from "lucide-react";
 import { supabase } from "@/lib/supabase";
+import { trackAndroidWaitlist } from "@/lib/metaPixel";
 
 interface AndroidWaitlistModalProps {
   open: boolean;
@@ -57,6 +58,7 @@ function ModalContent({ onClose }: { onClose: () => void }) {
       console.error(error);
       // Duplicate email = already on the list, treat as success
       if (error.code === "23505") {
+        trackAndroidWaitlist();
         setStatus("success");
         return;
       }
@@ -66,6 +68,7 @@ function ModalContent({ onClose }: { onClose: () => void }) {
     }
 
     setEmail("");
+    trackAndroidWaitlist();
     setStatus("success");
   };
 

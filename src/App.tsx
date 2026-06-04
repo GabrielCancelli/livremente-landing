@@ -1,5 +1,7 @@
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { trackPageView } from "@/lib/metaPixel";
+import CookieConsent from "@/components/CookieConsent";
 import Navbar from "@/components/Layout/Navbar";
 import Footer from "@/components/Layout/Footer";
 import Home from "@/pages/Home";
@@ -17,6 +19,15 @@ function ScrollToTop() {
   const { pathname } = useLocation();
   useEffect(() => {
     window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
+
+// Fires a Meta Pixel PageView on initial load and every SPA route change.
+function PixelPageView() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    trackPageView();
   }, [pathname]);
   return null;
 }
@@ -46,7 +57,9 @@ export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <PixelPageView />
       <Layout />
+      <CookieConsent />
     </BrowserRouter>
   );
 }

@@ -18,7 +18,7 @@ export default function Privacy() {
               Política de <span className="gradient-text">Privacidade</span>
             </h1>
             <p className="text-light-slate text-sm">
-              Última atualização: 30 de março de 2026
+              Última atualização: 4 de junho de 2026
             </p>
           </motion.div>
 
@@ -117,7 +117,9 @@ export default function Privacy() {
               <ul className="list-disc list-inside text-light-slate space-y-1 ml-2">
                 <li>
                   <strong>Consentimento</strong> — para coleta de dados do
-                  questionário, envio de notificações e participação na comunidade
+                  questionário, envio de notificações, participação na
+                  comunidade e uso de cookies de publicidade e medição no site
+                  institucional
                 </li>
                 <li>
                   <strong>Execução de contrato</strong> — para fornecer o serviço
@@ -147,6 +149,11 @@ export default function Privacy() {
                 <li>Serviços de notificações push</li>
                 <li>Ferramentas de analytics de produto</li>
                 <li>Serviços de monitoramento de erros e estabilidade</li>
+                <li>
+                  Plataformas de publicidade e mensuração de campanhas (ex.:
+                  Meta — Facebook/Instagram), utilizadas apenas neste site
+                  institucional
+                </li>
               </ul>
               <p className="text-light-slate leading-relaxed mt-3 text-sm">
                 Esses prestadores são contratualmente obrigados a proteger seus
@@ -252,8 +259,22 @@ export default function Privacy() {
               </h2>
               <p className="text-light-slate leading-relaxed">
                 O aplicativo móvel não utiliza cookies. Este site institucional
-                pode utilizar cookies essenciais para funcionamento e analytics.
-                Nenhum cookie de terceiros é utilizado para publicidade.
+                (livrementeapp.com) utiliza cookies e tecnologias semelhantes
+                para funcionamento, métricas de uso e publicidade. Em especial,
+                utilizamos o <strong>Meta Pixel</strong> (Meta Platforms, Inc. —
+                Facebook e Instagram) para medir a eficácia das nossas campanhas
+                de anúncios, registrando ações como o acesso a páginas, cliques
+                no botão de download e cadastros na lista de espera. Esses dados
+                são compartilhados com a Meta e tratados conforme a Política de
+                Dados da Meta. O Meta Pixel só é ativado{" "}
+                <strong>após o seu consentimento</strong>, manifestado no banner
+                de cookies exibido na primeira visita. Você pode conceder,
+                recusar ou revogar esse consentimento a qualquer momento pelo
+                link <em>"Preferências de cookies"</em> no rodapé do site, além
+                de gerenciar suas preferências de anúncios nas configurações da
+                sua conta do Facebook ou Instagram. O Meta Pixel é utilizado
+                apenas neste site e <strong>não</strong> está presente no
+                aplicativo móvel.
               </p>
             </div>
 

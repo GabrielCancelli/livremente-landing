@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Star, Shield, Zap } from "lucide-react";
+import { trackAppStoreClick } from "@/lib/metaPixel";
 
 const APP_STORE_URL = "https://apps.apple.com/br/app/livremente/id6759587050";
 
@@ -38,6 +39,7 @@ export default function DownloadCTA() {
               href={APP_STORE_URL}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackAppStoreClick("home_cta")}
               whileHover={{ scale: 1.04 }}
               whileTap={{ scale: 0.97 }}
               className="w-full max-w-md bg-white hover:bg-slate-50 text-deep-blue font-bold px-8 py-5 rounded-2xl transition-all shadow-lg hover:shadow-xl flex items-center justify-center gap-3 text-base"

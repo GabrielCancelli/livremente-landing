@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import { trackAppStoreClick } from "@/lib/metaPixel";
 
 const APP_STORE_URL = "https://apps.apple.com/br/app/livremente/id6759587050";
 
@@ -49,6 +50,7 @@ export default function Navbar() {
             href={APP_STORE_URL}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackAppStoreClick("navbar")}
             className="bg-white hover:bg-slate-100 text-deep-blue font-semibold text-sm px-5 py-2.5 rounded-full transition-all hover:shadow-lg inline-flex items-center gap-2"
           >
             <svg width="16" height="16" viewBox="0 0 384 512" fill="currentColor">
@@ -90,7 +92,10 @@ export default function Navbar() {
               href={APP_STORE_URL}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => setOpen(false)}
+              onClick={() => {
+                setOpen(false);
+                trackAppStoreClick("navbar_mobile");
+              }}
               className="bg-white hover:bg-slate-100 text-deep-blue font-semibold text-sm px-5 py-2.5 rounded-full text-center mt-2 transition-all inline-flex items-center justify-center gap-2"
             >
               <svg width="16" height="16" viewBox="0 0 384 512" fill="currentColor">

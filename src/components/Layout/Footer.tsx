@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { Heart } from "lucide-react";
+import { trackAppStoreClick } from "@/lib/metaPixel";
+import { openCookiePreferences } from "@/lib/consent";
 
 const APP_STORE_URL = "https://apps.apple.com/br/app/livremente/id6759587050";
 
@@ -27,6 +29,7 @@ export default function Footer() {
               href={APP_STORE_URL}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackAppStoreClick("footer")}
               className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/15 text-white text-xs font-semibold px-4 py-2.5 rounded-lg transition-colors w-fit border border-white/10"
             >
               <svg width="14" height="14" viewBox="0 0 384 512" fill="currentColor" className="shrink-0">
@@ -75,6 +78,12 @@ export default function Footer() {
             >
               Contato
             </a>
+            <button
+              onClick={openCookiePreferences}
+              className="text-sm text-light-slate hover:text-teal transition-colors text-left"
+            >
+              Preferências de cookies
+            </button>
           </div>
         </div>
 

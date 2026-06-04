@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Rocket } from "lucide-react";
+import { trackAppStoreClick } from "@/lib/metaPixel";
 
 const APP_STORE_URL = "https://apps.apple.com/br/app/livremente/id6759587050";
 
@@ -25,6 +26,7 @@ export default function CountdownTimer() {
         href={APP_STORE_URL}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => trackAppStoreClick("hero")}
         className="group"
       >
         <motion.div
