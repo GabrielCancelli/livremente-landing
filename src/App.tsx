@@ -10,10 +10,11 @@ import Pricing from "@/pages/Pricing";
 import Privacy from "@/pages/Privacy";
 import Terms from "@/pages/Terms";
 import Download from "@/pages/Download";
+import Cores from "@/pages/Cores";
 import NotFound from "@/pages/NotFound";
 
 // Focused conversion pages render without the global navbar/footer
-const BARE_ROUTES = ["/baixar"];
+const BARE_ROUTES = ["/baixar", "/cores"];
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -46,6 +47,7 @@ function Layout() {
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/baixar" element={<Download />} />
+        <Route path="/cores" element={<Cores />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       {!bare && <Footer />}
