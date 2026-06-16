@@ -33,6 +33,15 @@ function PixelPageView() {
   return null;
 }
 
+// The cookie banner mentions the brand, so the neutral color survey hides it.
+// Safe for LGPD: the pixel is opt-in, so with no banner a new visitor never
+// grants consent and nothing is tracked (the survey stores data first-party).
+function ConsentGate() {
+  const { pathname } = useLocation();
+  if (pathname === "/cores") return null;
+  return <CookieConsent />;
+}
+
 function Layout() {
   const { pathname } = useLocation();
   const bare = BARE_ROUTES.includes(pathname);
@@ -61,7 +70,7 @@ export default function App() {
       <ScrollToTop />
       <PixelPageView />
       <Layout />
-      <CookieConsent />
+      <ConsentGate />
     </BrowserRouter>
   );
 }
