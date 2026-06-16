@@ -6,7 +6,6 @@ import { trackEvent } from "@/lib/metaPixel";
 
 type Palette = "A" | "B" | "D";
 
-const APP_STORE_URL = "https://apps.apple.com/br/app/livremente/id6759587050";
 const DONE_KEY = "lm_cores_done";
 
 // 9 screens (3 telas x 3 paletas). "geral" reuses the welcome trio (the bird = identidade).
@@ -19,9 +18,9 @@ const IMG: Record<string, Record<Palette, string>> = {
 // The image-pick questions, in order.
 const PICKS: { key: string; img: keyof typeof IMG; eyebrow: string; q: string }[] = [
   { key: "boasvindas", img: "welcome", eyebrow: "Tela de boas-vindas", q: "Qual versão você acha mais bonita?" },
-  { key: "home", img: "home", eyebrow: "Tela principal do app", q: "E aqui — qual te agrada mais?" },
+  { key: "home", img: "home", eyebrow: "Tela principal", q: "E aqui — qual te agrada mais?" },
   { key: "grupos", img: "grupos", eyebrow: "Tela de grupos", q: "Qual versão você prefere?" },
-  { key: "geral", img: "welcome", eyebrow: "No geral", q: "Pensando no app inteiro, qual cor combina mais?" },
+  { key: "geral", img: "welcome", eyebrow: "No geral", q: "Qual dessas identidades de cor você acha mais bonita?" },
 ];
 
 const FAIXAS = ["16–24", "25–34", "35–44", "45+"];
@@ -62,7 +61,7 @@ export default function Cores() {
 
   useEffect(() => {
     const prev = document.title;
-    document.title = "Ajude a escolher a cara do LivreMente";
+    document.title = "Pesquisa sobre telas de aplicativos";
     trackEvent("ViewContent", { content_name: "Pesquisa de Cor" });
     if (localStorage.getItem(DONE_KEY)) setStatus("done");
     return () => {
@@ -123,16 +122,8 @@ export default function Cores() {
             Valeu de verdade!
           </h1>
           <p className="text-white/70 font-medium mb-8 max-w-sm">
-            Sua opinião ajuda a definir a cara do LivreMente. Foi rapidinho, né? 💛
+            Sua opinião ajuda muito na nossa pesquisa de design. Foi rapidinho, né? 💛
           </p>
-          <a
-            href={APP_STORE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full max-w-xs bg-teal hover:bg-teal-dark text-white font-bold px-6 py-4 rounded-2xl transition shadow-lg text-center"
-          >
-            Conhecer o app
-          </a>
           <button
             onClick={() => {
               localStorage.removeItem(DONE_KEY);
@@ -162,17 +153,16 @@ export default function Cores() {
           animate={{ opacity: 1, y: 0 }}
           className="flex flex-col items-center text-center"
         >
-          <img src="/logo.png" alt="LivreMente" className="h-9 w-auto mb-8" />
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-teal/20 text-teal font-semibold text-sm mb-6 uppercase tracking-wider border border-teal/30">
-            <Sparkles size={14} /> 1 minuto
+            <Sparkles size={14} /> Pesquisa · 1 minuto
           </span>
           <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-4 leading-tight font-[family-name:var(--font-heading)]">
-            Qual cor combina<br />mais com o LivreMente?
+            Qual dessas telas<br />você acha mais bonita?
           </h1>
           <p className="text-white/70 text-base mb-10 font-medium max-w-sm">
-            Estamos escolhendo a nova cara do app. Te mostramos algumas telas em
-            cores diferentes — é só tocar na que você achar mais bonita. Sem
-            certo ou errado.
+            Uma pesquisa rápida sobre design de telas de aplicativos. Vamos te
+            mostrar algumas telas em variações de cor — toque na que você mais
+            gosta. Não tem certo ou errado.
           </p>
           <button
             onClick={() => setStep(1)}
