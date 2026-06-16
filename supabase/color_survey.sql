@@ -20,6 +20,7 @@ create table if not exists public.color_survey (
   faixa_etaria     text,
   genero           text,
   comentario       text,
+  contato          text,  -- nome ou e-mail opcional (contato/sorteio)
   marketing_source text,
   user_agent       text
 );

@@ -43,6 +43,7 @@ export default function Cores() {
   const [faixa, setFaixa] = useState("");
   const [genero, setGenero] = useState("");
   const [comentario, setComentario] = useState("");
+  const [contato, setContato] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "done" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
 
@@ -90,6 +91,7 @@ export default function Cores() {
         faixa_etaria: faixa || null,
         genero: genero || null,
         comentario: comentario.trim() || null,
+        contato: contato.trim() || null,
         marketing_source: marketingSource,
         user_agent: navigator.userAgent,
       },
@@ -138,6 +140,7 @@ export default function Cores() {
               setFaixa("");
               setGenero("");
               setComentario("");
+              setContato("");
               setStep(0);
               setStatus("idle");
             }}
@@ -197,6 +200,16 @@ export default function Cores() {
             Pra terminar
           </h2>
           <p className="text-white/60 font-medium mb-6 text-sm">Só pra entender quem respondeu.</p>
+
+          <Label>Nome ou e-mail <span className="text-white/40 normal-case">(opcional)</span></Label>
+          <input
+            type="text"
+            value={contato}
+            onChange={(e) => setContato(e.target.value)}
+            maxLength={140}
+            placeholder="Como te chamar, ou seu e-mail"
+            className="w-full bg-white/10 border border-white/20 text-white placeholder-white/40 px-4 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-teal focus:border-transparent transition font-medium mb-6"
+          />
 
           <Label>Sua idade</Label>
           <ChipRow options={FAIXAS} value={faixa} onChange={setFaixa} />
