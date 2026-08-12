@@ -21,8 +21,8 @@ export default function Footer() {
               />
             </Link>
             <p className="text-light-slate text-sm max-w-sm leading-relaxed">
-              Ferramentas inteligentes, comunidade real e progresso gamificado
-              para conquista de liberdade mental.
+              Devocional diário, foco e um grupo que vê a sua perseverança.
+              Disciplina que você não carrega sozinho.
             </p>
             {/* App Store Badge */}
             <a
@@ -43,7 +43,7 @@ export default function Footer() {
           <div className="flex flex-col gap-3">
             <h4 className="text-sm font-semibold text-surface">Navegação</h4>
             {[
-              { to: "/", label: "Home" },
+              { to: "/", label: "Início" },
               { to: "/about", label: "Sobre" },
               { to: "/pricing", label: "Planos" },
             ].map((link) => (

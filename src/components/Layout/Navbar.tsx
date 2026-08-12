@@ -6,7 +6,7 @@ import { trackAppStoreClick } from "@/lib/metaPixel";
 const APP_STORE_URL = "https://apps.apple.com/br/app/livremente/id6759587050";
 
 const links = [
-  { to: "/", label: "Home" },
+  { to: "/", label: "Início" },
   { to: "/about", label: "Sobre" },
   { to: "/pricing", label: "Planos" },
 ];

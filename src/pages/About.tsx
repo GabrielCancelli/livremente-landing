@@ -12,26 +12,26 @@ import {
 const values = [
   {
     icon: ShieldCheck,
-    title: "Privacidade absoluta",
-    desc: "Seus dados de uso, bloqueios e diários são unicamente seus. Processamento 100% focado no seu dispositivo.",
+    title: "Privacidade de verdade",
+    desc: "O bloqueio é processado no seu aparelho e o app nunca sabe o nome dos apps que você escolheu. Seu grupo vê a sua perseverança, nunca o que você escreveu.",
     color: "#0FB3A3",
   },
   {
     icon: Microscope,
-    title: "Neurociência aplicada",
-    desc: "Apoiado no entendimento do sistema de recompensa cerebral (dopamina) para reverter o vício real.",
+    title: "Constância acima de intensidade",
+    desc: "Dois minutos por dia valem mais do que uma hora de vez em quando. Tudo no app é desenhado para caber num dia cheio.",
     color: "#0FB3A3",
   },
   {
     icon: Gamepad2,
-    title: "Recompensa limpa",
-    desc: "Construa caminhos neurológicos saudáveis conquistando recompensas e colecionáveis genuínos (sem gatilhos).",
+    title: "Marcos que celebram",
+    desc: "Cada etapa da sequência solta um pássaro novo, do Pardal à Fênix. A caminhada tem festa no meio, não só no fim.",
     color: "#FFC107",
   },
   {
     icon: Users,
-    title: "Irmandade genuína",
-    desc: "O vício não se vence em segredo. Fornecemos um fórum anônimo focado na partilha de dores e vitórias reais.",
+    title: "Grupo que vê você",
+    desc: "Disciplina não se carrega sozinho. No grupo, cada um vê se o outro perseverou hoje, e um cutucão de incentivo chega na hora certa.",
     color: "#4ECDC4",
   },
 ];
@@ -74,7 +74,7 @@ export default function About() {
               A Missão
             </h2>
             <p className="text-text-muted leading-relaxed font-medium relative z-10">
-              Libertar as pessoas de hábitos digitais nocivos, entregando uma plataforma inteligente capaz de quebrar o ciclo agudo do vício, fortalecer o caráter moral e instaurar raízes duradouras de domínio próprio.
+              Ajudar pessoas a perseverar no que importa: um devocional por dia, tempo protegido para o que tem valor, e a força de caminhar em grupo. Disciplina que ninguém precisa carregar sozinho.
             </p>
           </motion.div>
 
@@ -91,7 +91,7 @@ export default function About() {
               A Visão
             </h2>
             <p className="text-text-muted leading-relaxed font-medium relative z-10">
-              Tornar-se o maior e mais eficiente ecossistema tecnológico de libertação digital no Brasil, unindo bloqueios impenetráveis, neurobiologia computacional humana e uma comunidade baseada nos mesmos princípios e valores éticos.
+              Ser o companheiro diário de quem decidiu viver com propósito no Brasil: a leitura que abre o dia, o escudo que guarda o foco e o grupo que percebe quando você some.
             </p>
           </motion.div>
         </div>
@@ -147,7 +147,7 @@ export default function About() {
         >
           <p className="text-base text-text-muted font-medium mb-4 uppercase tracking-widest text-sm">O Método LivreMente</p>
           <p className="font-extrabold text-2xl lg:text-3xl xl:text-4xl leading-tight text-deep-blue">
-            Fé + Bloqueio de Sites + IA +<br className="hidden md:block" /> Comunidade + Neurociência
+            Devocional + Foco +<br className="hidden md:block" /> Escudo + Grupo
           </p>
           <p className="text-sm font-semibold text-teal mt-6 flex items-center justify-center gap-1 bg-teal/10 px-4 py-2 rounded-full w-fit mx-auto">
             Orgulhosamente Brasileiro 🇧🇷

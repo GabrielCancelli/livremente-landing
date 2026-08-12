@@ -24,56 +24,53 @@ const plans: Plan[] = [
     popular: false,
     cta: "Começar Grátis",
     features: [
-      { text: "Contador de Streaks", included: true },
-      { text: "Diário de Humor", included: true },
-      { text: "Registro de Tentações", included: true },
-      { text: "Botão de SOS (Pânico)", included: true },
-      { text: "Santuário dos Pássaros", included: true },
-      { text: "Juramento Diário", included: true },
-      { text: "Biblioteca (1 Módulo Liberado)", included: true },
-      { text: "Comunidade e Grupos", included: false },
-      { text: "Konsel Chat (IA)", included: false },
-      { text: "Bloqueador de Sites e Apps", included: false },
+      { text: "Devocional diário e sequência", included: true },
+      { text: "Sessões de foco de 25 e 50 minutos", included: true },
+      { text: "Grupos com até 20 lugares", included: true },
+      { text: "Metas do dia, escritas por você", included: true },
+      { text: "SOS: respiração e alguém para ligar", included: true },
+      { text: "Pássaros por marco de sequência", included: true },
+      { text: "Escudo de foco (apps e sites somem)", included: false },
+      { text: "Protocolos: pornografia, celular, apostas", included: false },
+      { text: "Grupos com mais de 20 lugares", included: false },
     ],
   },
   {
-    name: "Mensal",
+    name: "Pro Mensal",
     price: "R$ 24,90",
     period: "/mês",
-    description: "Ideal para começar e testar tudo",
+    description: "Tudo do grátis, mais o bloqueio e os programas",
     popular: false,
     cta: "Assinar Mensal",
     features: [
-      { text: "Contador de Streaks", included: true },
-      { text: "Diário de Humor", included: true },
-      { text: "Registro de Tentações", included: true },
-      { text: "Botão de SOS (Pânico)", included: true },
-      { text: "Santuário dos Pássaros", included: true },
-      { text: "Juramento Diário", included: true },
-      { text: "Biblioteca Completa (6 Módulos)", included: true },
-      { text: "Comunidade e Grupos", included: true },
-      { text: "Konsel Chat (IA)", included: true },
-      { text: "Bloqueador de Sites e Apps", included: true },
+      { text: "Devocional diário e sequência", included: true },
+      { text: "Sessões de foco de 25 e 50 minutos", included: true },
+      { text: "Grupos com até 20 lugares", included: true },
+      { text: "Metas do dia, escritas por você", included: true },
+      { text: "SOS: respiração e alguém para ligar", included: true },
+      { text: "Pássaros por marco de sequência", included: true },
+      { text: "Escudo de foco (apps e sites somem)", included: true },
+      { text: "Protocolos: pornografia, celular, apostas", included: true },
+      { text: "Grupos com mais de 20 lugares", included: true },
     ],
   },
   {
-    name: "Anual",
+    name: "Pro Anual",
     price: "R$ 12,49",
     period: "/mês",
     description: "Cobrado R$ 149,90 ao ano (R$ 0,41 por dia)",
     popular: true,
     cta: "Assinar Anual (50% OFF)",
     features: [
-      { text: "Contador de Streaks", included: true },
-      { text: "Diário de Humor", included: true },
-      { text: "Registro de Tentações", included: true },
-      { text: "Botão de SOS (Pânico)", included: true },
-      { text: "Santuário dos Pássaros", included: true },
-      { text: "Juramento Diário", included: true },
-      { text: "Biblioteca Completa (6 Módulos)", included: true },
-      { text: "Comunidade e Grupos", included: true },
-      { text: "Konsel Chat (IA)", included: true },
-      { text: "Bloqueador de Sites e Apps", included: true },
+      { text: "Devocional diário e sequência", included: true },
+      { text: "Sessões de foco de 25 e 50 minutos", included: true },
+      { text: "Grupos com até 20 lugares", included: true },
+      { text: "Metas do dia, escritas por você", included: true },
+      { text: "SOS: respiração e alguém para ligar", included: true },
+      { text: "Pássaros por marco de sequência", included: true },
+      { text: "Escudo de foco (apps e sites somem)", included: true },
+      { text: "Protocolos: pornografia, celular, apostas", included: true },
+      { text: "Grupos com mais de 20 lugares", included: true },
     ],
   },
 ];
@@ -81,19 +78,23 @@ const plans: Plan[] = [
 const faqs = [
   {
     q: "Posso cancelar a qualquer momento?",
-    a: "Sim! Sem multa, sem burocracia. Cancele direto pelo app ou pela App Store.",
+    a: "Sim! Sem multa, sem burocracia. Cancele direto pela App Store e continue com acesso até o fim do período pago.",
   },
   {
     q: "A versão gratuita realmente funciona?",
-    a: "Sim! O plano gratuito tem tudo que você precisa para começar. O Premium desbloqueia ferramentas avançadas para quem quer ir mais fundo.",
+    a: "Sim! Devocional, foco, grupos, metas e SOS são grátis de verdade. O Pro destrava o Escudo de foco, os Protocolos e os grupos grandes.",
+  },
+  {
+    q: "Preciso do Pro para entrar num grupo grande?",
+    a: "Não. Só quem cria o grupo com mais de 20 lugares precisa do Pro. Quem entra não paga nada.",
   },
   {
     q: "Como funciona o pagamento?",
-    a: "O pagamento é processado via App Store (iOS) com total segurança. Suportamos os métodos de pagamento aceitos pela Apple.",
+    a: "O pagamento é processado pela App Store (iOS) com total segurança, nos métodos aceitos pela Apple.",
   },
   {
     q: "Tem desconto no plano anual?",
-    a: "Sim! O plano anual custa R$ 149,90/ano (economia de R$ 89). Disponível diretamente no app.",
+    a: "Sim! O plano anual custa R$ 149,90 por ano, uma economia de R$ 148,90 em relação aos 12 meses do mensal.",
   },
 ];
 
@@ -112,7 +113,7 @@ export default function Pricing() {
           </p>
           <h1 className="text-4xl md:text-5xl font-extrabold font-[family-name:var(--font-heading)] mb-4 text-text-main">
             Invista na sua{" "}
-            <GradientText colors={["#0FB3A3", "#0D9E90", "#102A43", "#0FB3A3"]} animationSpeed={6}>liberdade mental</GradientText>
+            <GradientText colors={["#0FB3A3", "#0D9E90", "#102A43", "#0FB3A3"]} animationSpeed={6}>perseverança</GradientText>
           </h1>
           <p className="text-text-muted text-lg">
             Comece grátis. Evolua quando estiver pronto.

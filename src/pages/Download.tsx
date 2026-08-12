@@ -41,8 +41,8 @@ export default function Download() {
           Baixe o LivreMente
         </h1>
         <p className="text-white/70 text-base md:text-lg mb-10 font-medium">
-          Reconquiste sua mente. Escolha sua plataforma e comece sua jornada de
-          libertação hoje.
+          Devocional diário, foco e um grupo que vê você. Escolha sua
+          plataforma e comece hoje.
         </p>
 
         {/* Buttons */}
@@ -78,14 +78,14 @@ export default function Download() {
         </div>
 
         <p className="text-white/40 text-xs mt-5 font-medium">
-          Android em breve — entre na lista e seja o primeiro a saber.
+          Android em breve: entre na lista e seja o primeiro a saber.
         </p>
 
         {/* Trust signals */}
         <div className="mt-10 grid grid-cols-3 gap-4 md:gap-8 w-full">
           {[
             { icon: Star, label: "Gratuito" },
-            { icon: Shield, label: "100% Privado" },
+            { icon: Shield, label: "Sem anúncios" },
             { icon: Zap, label: "Leve e Rápido" },
           ].map((item) => (
             <div key={item.label} className="flex flex-col items-center gap-2">

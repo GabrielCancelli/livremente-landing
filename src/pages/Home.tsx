@@ -22,22 +22,22 @@ export default function Home() {
             {[
               {
                 icon: Sparkles,
-                stat: "90 dias",
-                label: "para reprogramar o seu cérebro e construir novos hábitos, com base na ciência",
+                stat: "2 minutos",
+                label: "por dia bastam: o devocional é curto de propósito, e o dia já conta",
                 color: "#102A43",
                 bg: "bg-blue-50"
               },
               {
                 icon: Timer,
-                stat: "8 pássaros",
-                label: "para colecionar na sua jornada, representando cada estágio de recuperação",
+                stat: "6 pássaros",
+                label: "para soltar na caminhada, um a cada marco da sequência, do Pardal à Fênix aos 90 dias",
                 color: "#0FB3A3",
                 bg: "bg-teal-50"
               },
               {
                 icon: Shield,
                 stat: "100%",
-                label: "privacidade e controle — todo o processamento de bloqueio é local no seu dispositivo",
+                label: "do bloqueio processado no seu aparelho: o app nunca sabe o nome dos apps que você escolheu",
                 color: "#102A43",
                 bg: "bg-slate-100"
               },

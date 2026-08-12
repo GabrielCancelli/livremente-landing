@@ -28,10 +28,10 @@ export default function DownloadCTA() {
               🎉 Disponível Agora
             </motion.span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-4 leading-tight font-[family-name:var(--font-heading)]">
-              O dia que você muda tudo começa aqui.
+              Comece pequeno. Hoje.
             </h2>
             <p className="text-white/70 text-lg mb-10 font-medium">
-              Baixe o LivreMente gratuitamente e comece sua jornada de libertação hoje.
+              Dois minutos de devocional já contam. A constância faz o resto.
             </p>
 
             {/* App Store Button */}
@@ -54,7 +54,7 @@ export default function DownloadCTA() {
             <div className="mt-8 grid grid-cols-3 gap-4 md:gap-8 w-full max-w-md">
               {[
                 { icon: Star, label: "Gratuito" },
-                { icon: Shield, label: "100% Privado" },
+                { icon: Shield, label: "Sem anúncios" },
                 { icon: Zap, label: "Leve e Rápido" },
               ].map((item) => (
                 <div key={item.label} className="flex flex-col items-center gap-2">
