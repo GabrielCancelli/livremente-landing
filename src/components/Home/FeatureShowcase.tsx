@@ -41,7 +41,7 @@ const features: Feature[] = [
   {
     id: "protocolos",
     title: "Programas para vencer dependências.",
-    description: "Pornografia, celular e apostas: um texto por dia, um juramento que vale por 24 horas, e o bloqueio incluído.",
+    description: "Conteúdo adulto, celular e apostas: um texto por dia, um juramento que vale por 24 horas, e o bloqueio incluído.",
     image: "/mockup2-protocolos.png",
     badge: "Pro",
     reverse: true,
