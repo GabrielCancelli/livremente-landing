@@ -18,7 +18,7 @@ export default function Privacy() {
               Política de <span className="gradient-text">Privacidade</span>
             </h1>
             <p className="text-light-slate text-sm">
-              Última atualização: 4 de junho de 2026
+              Última atualização: 12 de agosto de 2026
             </p>
           </motion.div>
 
@@ -35,14 +35,15 @@ export default function Privacy() {
               </h2>
               <p className="text-light-slate leading-relaxed">
                 O LivreMente ("nós", "nosso" ou "aplicativo") é um aplicativo
-                móvel de saúde mental focado em ajudar usuários no processo de
-                libertação de hábitos digitais nocivos, por meio de ferramentas
-                inteligentes, comunidade de apoio, acompanhamento com IA e
-                gamificação. Devido à natureza sensível do tema tratado, levamos
-                a proteção dos seus dados com extrema seriedade. Esta Política
-                de Privacidade descreve como coletamos, usamos, armazenamos e
-                protegemos suas informações pessoais, em conformidade com a{" "}
-                <strong>Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018)</strong>{" "}
+                móvel de produtividade e devocional diário: ele ajuda você a
+                proteger seu tempo com sessões de foco e bloqueio de apps,
+                perseverar num ritual diário de leitura e caminhar junto de um
+                grupo. Parte do conteúdo trata de superação de hábitos, e por
+                isso levamos a proteção dos seus dados com extrema seriedade.
+                Esta Política de Privacidade descreve como coletamos, usamos,
+                armazenamos e protegemos suas informações pessoais, em
+                conformidade com a{" "}
+                <strong>Lei Geral de Proteção de Dados (LGPD, Lei nº 13.709/2018)</strong>{" "}
                 e demais legislações aplicáveis.
               </p>
             </div>
@@ -58,12 +59,9 @@ export default function Privacy() {
               </h3>
               <ul className="list-disc list-inside text-light-slate space-y-1 ml-2">
                 <li>Nome de exibição (ou apelido) e e-mail (ao criar conta)</li>
-                <li>Respostas do questionário de autoavaliação de dependência (opcional)</li>
-                <li>Publicações e mensagens na comunidade de apoio</li>
-                <li>Mensagens diretas entre usuários</li>
-                <li>Conversas com o assistente de IA (Konsel)</li>
-                <li>Registros de diário pessoal e check-ins de humor</li>
-                <li>Registros de tentações (urges) e recaídas</li>
+                <li>Respostas do questionário inicial de personalização (metas e hábitos)</li>
+                <li>Metas pessoais que você escrever no aplicativo</li>
+                <li>Participação em grupos (criação, entrada e saída por código de convite)</li>
                 <li>Configurações de preferências e notificações</li>
               </ul>
 
@@ -71,14 +69,52 @@ export default function Privacy() {
                 2.2 Dados coletados automaticamente
               </h3>
               <ul className="list-disc list-inside text-light-slate space-y-1 ml-2">
+                <li>Progresso do devocional (dias lidos), sequência e recorde</li>
+                <li>Protocolos ativos e passos do dia (para continuidade entre aparelhos)</li>
+                <li>Sessões de foco concluídas (duração em minutos)</li>
                 <li>Dados de uso do aplicativo (telas visitadas, ações realizadas)</li>
                 <li>Informações do dispositivo (modelo, sistema operacional, idioma)</li>
-                <li>Dados de streak e progresso (dias consecutivos, conquistas)</li>
                 <li>Logs de erro para melhoria do aplicativo</li>
               </ul>
 
               <h3 className="text-base font-semibold text-surface mt-4 mb-2">
-                2.3 Dados de pagamento
+                2.3 Dados que ficam somente no seu aparelho
+              </h3>
+              <p className="text-light-slate leading-relaxed">
+                Alguns dados nunca saem do seu dispositivo: o contato de
+                emergência do SOS (nome e telefone que você digita), os apps e
+                categorias escolhidos no Escudo de foco e os horários de
+                bloqueio programados. Nada disso é enviado aos nossos
+                servidores.
+              </p>
+
+              <h3 className="text-base font-semibold text-surface mt-4 mb-2">
+                2.4 Tempo de Uso (Screen Time da Apple)
+              </h3>
+              <p className="text-light-slate leading-relaxed">
+                O Escudo de foco usa os controles de Tempo de Uso do iOS
+                (Family Controls), mediante a sua autorização explícita. A
+                escolha do que bloquear acontece no seletor do próprio sistema:
+                o aplicativo recebe apenas a quantidade de itens escolhidos,
+                nunca os nomes dos apps. O bloqueio é aplicado localmente pelo
+                iOS, e você pode revogar a permissão a qualquer momento nos
+                Ajustes do aparelho.
+              </p>
+
+              <h3 className="text-base font-semibold text-surface mt-4 mb-2">
+                2.5 O que os membros do seu grupo veem
+              </h3>
+              <p className="text-light-slate leading-relaxed">
+                Ao entrar num grupo, os demais membros passam a ver o seu nome
+                de exibição, se você fez o devocional de hoje, a sua sequência
+                atual e o seu recorde. Nada além disso é compartilhado: os
+                grupos não têm chat, publicações nem mensagens, e seus
+                protocolos, metas e sessões de foco nunca são visíveis a
+                outras pessoas.
+              </p>
+
+              <h3 className="text-base font-semibold text-surface mt-4 mb-2">
+                2.6 Dados de pagamento
               </h3>
               <p className="text-light-slate leading-relaxed">
                 As compras in-app são processadas pela Apple App Store e Google
@@ -100,8 +136,8 @@ export default function Privacy() {
                 <li>Enviar notificações push (com seu consentimento)</li>
                 <li>Analisar padrões de uso para melhoria do produto</li>
                 <li>Monitorar e corrigir erros técnicos</li>
-                <li>Gerenciar sua assinatura e conteúdo premium</li>
-                <li>Moderar conteúdo da comunidade para segurança dos usuários</li>
+                <li>Gerenciar sua assinatura e o conteúdo do plano Pro</li>
+                <li>Mostrar seu progresso ao seu grupo (nome, devocional de hoje, sequência e recorde)</li>
               </ul>
             </div>
 
@@ -116,17 +152,17 @@ export default function Privacy() {
               </p>
               <ul className="list-disc list-inside text-light-slate space-y-1 ml-2">
                 <li>
-                  <strong>Consentimento</strong> — para coleta de dados do
-                  questionário, envio de notificações, participação na
-                  comunidade e uso de cookies de publicidade e medição no site
-                  institucional
+                  <strong>Consentimento</strong>: para coleta de dados do
+                  questionário, envio de notificações e uso de cookies de
+                  publicidade e medição no site institucional
                 </li>
                 <li>
-                  <strong>Execução de contrato</strong> — para fornecer o serviço
-                  conforme os Termos de Uso
+                  <strong>Execução de contrato</strong>: para fornecer o serviço
+                  conforme os Termos de Uso, incluindo os grupos e a exibição do
+                  seu progresso aos membros do seu grupo
                 </li>
                 <li>
-                  <strong>Legítimo interesse</strong> — para analytics agregados,
+                  <strong>Legítimo interesse</strong>: para analytics agregados,
                   melhoria do produto e detecção de fraude
                 </li>
               </ul>
@@ -151,7 +187,7 @@ export default function Privacy() {
                 <li>Serviços de monitoramento de erros e estabilidade</li>
                 <li>
                   Plataformas de publicidade e mensuração de campanhas (ex.:
-                  Meta — Facebook/Instagram), utilizadas apenas neste site
+                  Meta, dona do Facebook e do Instagram), utilizadas apenas neste site
                   institucional
                 </li>
               </ul>
@@ -223,8 +259,9 @@ export default function Privacy() {
                 <li>Solicitar portabilidade dos dados</li>
                 <li>Revogar consentimento a qualquer momento</li>
                 <li>
-                  <strong>Solicitar exclusão de conta</strong> — disponível
-                  diretamente no aplicativo (Perfil → Configurações → Excluir Conta)
+                  <strong>Solicitar exclusão de conta</strong>: disponível
+                  diretamente no aplicativo (Perfil → Privacidade e dados →
+                  Excluir conta)
                 </li>
               </ul>
               <p className="text-light-slate leading-relaxed mt-3">
@@ -244,11 +281,12 @@ export default function Privacy() {
                 10. Crianças e Adolescentes
               </h2>
               <p className="text-light-slate leading-relaxed">
-                O LivreMente é classificado para maiores de 17 anos devido à
-                natureza do conteúdo abordado (recuperação de vícios
-                comportamentais). Não coletamos intencionalmente dados de menores de
-                17 anos. Caso identifiquemos tal coleta, os dados serão excluídos
-                imediatamente.
+                O LivreMente é indicado para maiores de 13 anos, em linha com a
+                classificação do aplicativo na App Store (alguns programas
+                tratam de superação de hábitos com temas maduros de forma leve
+                e ocasional). Não coletamos intencionalmente dados de menores
+                de 13 anos. Caso identifiquemos tal coleta, os dados serão
+                excluídos imediatamente.
               </p>
             </div>
 
@@ -261,8 +299,8 @@ export default function Privacy() {
                 O aplicativo móvel não utiliza cookies. Este site institucional
                 (livrementeapp.com) utiliza cookies e tecnologias semelhantes
                 para funcionamento, métricas de uso e publicidade. Em especial,
-                utilizamos o <strong>Meta Pixel</strong> (Meta Platforms, Inc. —
-                Facebook e Instagram) para medir a eficácia das nossas campanhas
+                utilizamos o <strong>Meta Pixel</strong> (Meta Platforms, Inc.,
+                dona do Facebook e do Instagram) para medir a eficácia das nossas campanhas
                 de anúncios, registrando ações como o acesso a páginas, cliques
                 no botão de download e cadastros na lista de espera. Esses dados
                 são compartilhados com a Meta e tratados conforme a Política de

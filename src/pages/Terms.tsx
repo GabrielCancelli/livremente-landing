@@ -18,7 +18,7 @@ export default function Terms() {
               Termos de <span className="gradient-text">Uso</span>
             </h1>
             <p className="text-light-slate text-sm">
-              Última atualização: 30 de março de 2026
+              Última atualização: 12 de agosto de 2026
             </p>
           </motion.div>
 
@@ -47,18 +47,23 @@ export default function Terms() {
                 2. Descrição do Serviço
               </h2>
               <p className="text-light-slate leading-relaxed">
-                O LivreMente é um aplicativo de saúde mental que oferece
-                ferramentas para foco, quebra de hábitos prejudiciais e bem-estar
-                emocional, incluindo:
+                O LivreMente é um aplicativo de produtividade e devocional
+                diário, incluindo:
               </p>
               <ul className="list-disc list-inside text-light-slate space-y-1 ml-2 mt-2">
-                <li>Rastreamento de progresso com streaks e gamificação</li>
-                <li>Conteúdo devocional e educacional</li>
-                <li>Comunidade moderada para suporte mútuo</li>
-                <li>Diário pessoal</li>
-                <li>Exercícios de bem-estar</li>
-                <li>Sistema de amizades e grupos</li>
+                <li>Devocional diário com sequência de dias e conquistas</li>
+                <li>Sessões de foco de 25 ou 50 minutos</li>
+                <li>Grupos para acompanhar a perseverança uns dos outros</li>
+                <li>Escudo de foco: bloqueio de apps e sites escolhidos (plano Pro)</li>
+                <li>Protocolos: programas diários de superação de hábitos (plano Pro)</li>
+                <li>Metas pessoais do dia e SOS com respiração guiada</li>
               </ul>
+              <p className="text-light-slate leading-relaxed mt-3">
+                O Escudo de foco depende de permissões do sistema (Tempo de Uso
+                do iOS) e bloqueia o que o sistema permite bloquear. Sites são
+                filtrados por listas e pelo filtro de conteúdo do próprio
+                sistema, sem garantia de cobertura total.
+              </p>
               <div className="mt-4 rounded-xl bg-alert-red/10 border border-alert-red/20 p-4">
                 <p className="text-sm text-light-slate">
                   <strong className="text-alert-red">Importante:</strong> O
@@ -79,8 +84,8 @@ export default function Terms() {
                 3.1 Criação de conta
               </h3>
               <p className="text-light-slate leading-relaxed">
-                Você pode utilizar o App de forma anônima ou criar uma conta com
-                e-mail e senha. Ao criar conta, você é responsável por manter a
+                O App requer uma conta (e-mail e senha) para guardar o seu
+                progresso e permitir os grupos. Você é responsável por manter a
                 confidencialidade de suas credenciais.
               </p>
 
@@ -97,9 +102,10 @@ export default function Terms() {
               </h3>
               <p className="text-light-slate leading-relaxed">
                 Você pode solicitar a exclusão da sua conta a qualquer momento
-                pelo App (Perfil → Configurações → Excluir Conta). A exclusão é
-                processada em até <strong>30 dias</strong>. Após esse período,
-                seus dados pessoais são permanentemente removidos.
+                pelo App (Perfil → Privacidade e dados → Excluir conta). A
+                exclusão é processada em até <strong>30 dias</strong>. Após esse
+                período, seus dados pessoais são permanentemente removidos. Se
+                você criou um grupo, ele deixa de existir junto com a sua conta.
               </p>
             </div>
 
@@ -112,13 +118,12 @@ export default function Terms() {
                 Ao utilizar o App, você concorda em <strong>não</strong>:
               </p>
               <ul className="list-disc list-inside text-light-slate space-y-1 ml-2">
-                <li>Publicar conteúdo ilegal, abusivo, difamatório ou pornográfico</li>
-                <li>Assediar, intimidar ou discriminar outros usuários</li>
-                <li>Enviar spam, publicidade não autorizada ou phishing</li>
+                <li>Usar nome de exibição ilegal, abusivo, difamatório ou ofensivo</li>
+                <li>Assediar, intimidar ou discriminar membros do seu grupo</li>
                 <li>Tentar acessar contas de outros usuários</li>
                 <li>Usar o App para fins incompatíveis com sua finalidade</li>
                 <li>Fazer engenharia reversa ou tentar extrair o código-fonte</li>
-                <li>Burlar mecanismos de segurança, rate limiting ou moderação</li>
+                <li>Burlar mecanismos de segurança ou limites de uso</li>
               </ul>
               <p className="text-light-slate leading-relaxed mt-3">
                 O descumprimento pode resultar em suspensão ou exclusão
@@ -126,36 +131,35 @@ export default function Terms() {
               </p>
             </div>
 
-            {/* 5. Comunidade */}
+            {/* 5. Grupos */}
             <div>
               <h2 className="text-xl font-bold font-[family-name:var(--font-heading)] text-teal mb-3">
-                5. Comunidade e Conteúdo do Usuário
+                5. Grupos
               </h2>
               <p className="text-light-slate leading-relaxed mb-3">
-                O App possui funcionalidades de comunidade onde você pode
-                publicar conteúdo, enviar mensagens e interagir com outros
-                usuários.
+                O App permite criar e participar de grupos por código de
+                convite. Os grupos não têm chat, publicações nem mensagens.
               </p>
               <ul className="list-disc list-inside text-light-slate space-y-1 ml-2">
                 <li>
-                  Você é responsável por todo conteúdo que publicar
+                  Quem cria o grupo escolhe o número de lugares; acima de 20, é
+                  preciso ter o plano Pro (apenas quem cria; quem entra não paga)
                 </li>
                 <li>
-                  Ao publicar, você concede ao LivreMente uma licença não exclusiva
-                  para exibir esse conteúdo dentro do App
+                  Ao participar, os membros do grupo veem o seu nome de exibição,
+                  se você fez o devocional de hoje, a sua sequência e o seu
+                  recorde
                 </li>
                 <li>
-                  Você pode excluir seu conteúdo a qualquer momento
+                  Você pode sair de um grupo a qualquer momento
                 </li>
                 <li>
-                  Nos reservamos o direito de remover conteúdo que viole estes
-                  Termos ou nossas políticas de comunidade
+                  O grupo deixa de existir se a conta de quem o criou for
+                  excluída
                 </li>
                 <li>
-                  Você pode bloquear outros usuários quando desejar
-                </li>
-                <li>
-                  Você pode reportar conteúdo inadequado diretamente no App
+                  Nos reservamos o direito de remover grupos ou nomes de exibição
+                  que violem estes Termos
                 </li>
               </ul>
             </div>
@@ -163,16 +167,18 @@ export default function Terms() {
             {/* 6. Premium */}
             <div>
               <h2 className="text-xl font-bold font-[family-name:var(--font-heading)] text-teal mb-3">
-                6. Assinatura Premium
+                6. Assinatura Pro
               </h2>
               <h3 className="text-base font-semibold text-surface mt-4 mb-2">
                 6.1 Planos e pagamento
               </h3>
               <p className="text-light-slate leading-relaxed">
-                O App oferece funcionalidades gratuitas e premium. As assinaturas
-                são processadas pela Apple App Store.
-                Os preços são exibidos na moeda
-                local antes da confirmação da compra.
+                O App oferece funcionalidades gratuitas (devocional, sessões de
+                foco, grupos, sequência, metas e SOS) e funcionalidades do plano
+                Pro (Escudo de foco, Protocolos e grupos com mais de 20
+                lugares). As assinaturas, mensal ou anual, são processadas pela
+                Apple App Store. Os preços são exibidos na moeda local antes da
+                confirmação da compra.
               </p>
 
               <h3 className="text-base font-semibold text-surface mt-4 mb-2">
@@ -207,8 +213,8 @@ export default function Terms() {
                 7. Propriedade Intelectual
               </h2>
               <p className="text-light-slate leading-relaxed">
-                Todo o conteúdo do App — incluindo textos, ilustrações, ícones,
-                design, código-fonte e marca — é propriedade do LivreMente e
+                Todo o conteúdo do App, incluindo textos, ilustrações, ícones,
+                design, código-fonte e marca, é propriedade do LivreMente e
                 protegido por leis de propriedade intelectual. É proibida a
                 reprodução, distribuição ou uso comercial sem autorização prévia
                 e por escrito.
@@ -227,7 +233,8 @@ export default function Terms() {
               </p>
               <ul className="list-disc list-inside text-light-slate space-y-1 ml-2 mt-2">
                 <li>Decisões tomadas com base no conteúdo do App</li>
-                <li>Interações entre usuários na comunidade</li>
+                <li>Interações entre membros de um grupo fora do App</li>
+                <li>Conteúdo acessado apesar do bloqueio (o Escudo não garante cobertura total)</li>
                 <li>Perdas de dados causadas por falhas técnicas</li>
                 <li>Indisponibilidades temporárias do serviço</li>
               </ul>
