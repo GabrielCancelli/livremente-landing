@@ -11,6 +11,7 @@ import Privacy from "@/pages/Privacy";
 import Terms from "@/pages/Terms";
 import Download from "@/pages/Download";
 import Cores from "@/pages/Cores";
+import ExcluirConta from "@/pages/ExcluirConta";
 import NotFound from "@/pages/NotFound";
 
 // Focused conversion pages render without the global navbar/footer
@@ -55,6 +56,7 @@ function Layout() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
+        <Route path="/excluir-conta" element={<ExcluirConta />} />
         <Route path="/baixar" element={<Download />} />
         <Route path="/cores" element={<Cores />} />
         <Route path="*" element={<NotFound />} />
