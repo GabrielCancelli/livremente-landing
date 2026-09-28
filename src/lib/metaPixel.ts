@@ -91,6 +91,15 @@ export function trackAppStoreClick(source: string): void {
   });
 }
 
+/** Android download intent — a click on any "Baixar na Google Play" button. */
+export function trackPlayStoreClick(source: string): void {
+  trackEvent("Lead", {
+    content_name: "Google Play (Android)",
+    content_category: "app_download",
+    source,
+  });
+}
+
 /** Android waitlist signup — the email was successfully captured. */
 export function trackAndroidWaitlist(): void {
   trackEvent("CompleteRegistration", {

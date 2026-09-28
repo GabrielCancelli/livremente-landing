@@ -1,14 +1,14 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Star, Shield, Zap } from "lucide-react";
-import AndroidWaitlistModal from "@/components/Download/AndroidWaitlistModal";
-import { trackAppStoreClick, trackEvent } from "@/lib/metaPixel";
+import { trackAppStoreClick, trackPlayStoreClick, trackEvent } from "@/lib/metaPixel";
 
 const APP_STORE_URL = "https://apps.apple.com/br/app/livremente/id6759587050";
+// Android publicado na Play em 2026-09-28 (produção, vc10). A lista de espera
+// (AndroidWaitlistModal) saiu daqui; o componente fica no repositório por enquanto.
+const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.livremente.app";
 
 export default function Download() {
-  const [androidOpen, setAndroidOpen] = useState(false);
-
   useEffect(() => {
     const prev = document.title;
     document.title = "Baixe o LivreMente";
@@ -63,9 +63,12 @@ export default function Download() {
             Baixar na App Store
           </motion.a>
 
-          {/* Android — opens waitlist */}
-          <motion.button
-            onClick={() => setAndroidOpen(true)}
+          {/* Google Play */}
+          <motion.a
+            href={PLAY_STORE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackPlayStoreClick("baixar")}
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
             className="w-full bg-teal hover:bg-teal-dark text-white font-bold px-6 py-5 rounded-2xl transition-all shadow-lg flex items-center justify-center gap-3 text-base"
@@ -73,12 +76,12 @@ export default function Download() {
             <svg width="24" height="24" viewBox="0 0 576 512" fill="currentColor" className="shrink-0">
               <path d="M420.55 301.93a24 24 0 1 1 24-24 24 24 0 0 1-24 24m-265.1 0a24 24 0 1 1 24-24 24 24 0 0 1-24 24m273.7-144.48 47.94-83a10 10 0 1 0-17.27-10l-48.54 84.07a301.25 301.25 0 0 0-246.56 0L116.18 64.45a10 10 0 1 0-17.27 10l47.94 83C64.53 202.22 8.24 285.55 0 384h576c-8.24-98.45-64.54-181.78-146.85-226.55" />
             </svg>
-            Quero no Android
-          </motion.button>
+            Baixar na Google Play
+          </motion.a>
         </div>
 
         <p className="text-white/40 text-xs mt-5 font-medium">
-          Android em breve: entre na lista e seja o primeiro a saber.
+          Disponível para iPhone e Android.
         </p>
 
         {/* Trust signals */}
@@ -97,8 +100,6 @@ export default function Download() {
           ))}
         </div>
       </motion.div>
-
-      <AndroidWaitlistModal open={androidOpen} onClose={() => setAndroidOpen(false)} />
     </main>
   );
 }
