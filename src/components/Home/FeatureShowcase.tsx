@@ -31,12 +31,21 @@ const features: Feature[] = [
     color: "bg-blue-50 text-deep-blue"
   },
   {
+    id: "guardiao",
+    title: "Um Guardião do seu lado.",
+    description: "Alguém de confiança vê se você fez o devocional, a sua sequência e se o Escudo está ligado, e recebe um aviso quando você o desliga. Nunca vê o que você escreve, e você para quando quiser. Quem acompanha usa grátis.",
+    image: "/mockup2-guardiao.png",
+    badge: "Pro",
+    reverse: false,
+    color: "bg-sky-50 text-sky-700"
+  },
+  {
     id: "grupos",
     title: "Um grupo que vê você.",
     description: "Cada um vê se o outro perseverou hoje: o devocional, a sequência e o recorde. Nunca o que você escreveu. Quem cria escolhe o tamanho, e quem entra não paga.",
     image: "/mockup2-grupos.png",
     badge: "Grátis",
-    reverse: false,
+    reverse: true,
     color: "bg-indigo-50 text-indigo-700"
   },
   {
@@ -45,7 +54,7 @@ const features: Feature[] = [
     description: "Conteúdo adulto, celular e apostas: um texto por dia, um juramento que vale por 24 horas, e o bloqueio incluído.",
     image: "/mockup2-protocolos.png",
     badge: "Pro",
-    reverse: true,
+    reverse: false,
     color: "bg-violet-50 text-violet-700"
   },
   {
@@ -54,7 +63,7 @@ const features: Feature[] = [
     description: "Respiração guiada e alguém para ligar: o contato que você escolher e o CVV 188. Um toque, sem julgamento.",
     image: "/mockup2-sos.png",
     badge: "Grátis",
-    reverse: false,
+    reverse: true,
     color: "bg-red-50 text-alert-red"
   },
   {
@@ -63,7 +72,7 @@ const features: Feature[] = [
     description: "Cada marco da sua sequência solta um pássaro novo. São seis até a Fênix, que chega aos 90 dias.",
     image: "/mockup2-conquistas.png",
     badge: "Grátis",
-    reverse: true,
+    reverse: false,
     color: "bg-amber-50 text-amber-700"
   }
 ];
