@@ -18,7 +18,7 @@ export default function Terms() {
               Termos de <span className="gradient-text">Uso</span>
             </h1>
             <p className="text-light-slate text-sm">
-              Última atualização: 12 de agosto de 2026
+              Última atualização: 8 de outubro de 2026
             </p>
           </motion.div>
 
@@ -60,9 +60,11 @@ export default function Terms() {
               </ul>
               <p className="text-light-slate leading-relaxed mt-3">
                 O Escudo de foco depende de permissões do sistema (Tempo de Uso
-                do iOS) e bloqueia o que o sistema permite bloquear. Sites são
-                filtrados por listas e pelo filtro de conteúdo do próprio
-                sistema, sem garantia de cobertura total.
+                no iPhone, serviço de acessibilidade no Android) e bloqueia o
+                que o sistema permite bloquear. Sites são filtrados por listas
+                e, no iPhone, também pelo filtro de conteúdo do próprio
+                sistema, sem garantia de cobertura total. Alguns recursos, como
+                os horários programados, existem só no iPhone.
               </p>
               <div className="mt-4 rounded-xl bg-alert-red/10 border border-alert-red/20 p-4">
                 <p className="text-sm text-light-slate">
@@ -177,8 +179,9 @@ export default function Terms() {
                 foco, grupos, sequência, metas e SOS) e funcionalidades do plano
                 Pro (Escudo de foco, Protocolos e grupos com mais de 20
                 lugares). As assinaturas, mensal ou anual, são processadas pela
-                Apple App Store. Os preços são exibidos na moeda local antes da
-                confirmação da compra.
+                Apple App Store (iPhone) ou pela Google Play (Android). Os
+                preços são exibidos na moeda local antes da confirmação da
+                compra.
               </p>
 
               <h3 className="text-base font-semibold text-surface mt-4 mb-2">
@@ -194,16 +197,19 @@ export default function Terms() {
                 6.3 Cancelamento
               </h3>
               <p className="text-light-slate leading-relaxed">
-                Cancelamentos devem ser feitos nas configurações da App Store. Não processamos cancelamentos diretamente. Após
-                o cancelamento, você mantém acesso até o final do período pago.
+                Cancelamentos devem ser feitos na loja onde a assinatura foi
+                contratada: nos Ajustes do iPhone (App Store) ou no app Google
+                Play, em Assinaturas. Não processamos cancelamentos
+                diretamente. Após o cancelamento, você mantém acesso até o
+                final do período pago.
               </p>
 
               <h3 className="text-base font-semibold text-surface mt-4 mb-2">
                 6.4 Reembolso
               </h3>
               <p className="text-light-slate leading-relaxed">
-                Reembolsos seguem as políticas da Apple. Solicite
-                diretamente pela App Store.
+                Reembolsos seguem as políticas da loja onde a compra foi feita
+                (Apple ou Google). Solicite diretamente à loja.
               </p>
             </div>
 

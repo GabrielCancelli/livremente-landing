@@ -18,7 +18,7 @@ export default function Privacy() {
               Política de <span className="gradient-text">Privacidade</span>
             </h1>
             <p className="text-light-slate text-sm">
-              Última atualização: 12 de agosto de 2026
+              Última atualização: 8 de outubro de 2026
             </p>
           </motion.div>
 
@@ -82,14 +82,14 @@ export default function Privacy() {
               </h3>
               <p className="text-light-slate leading-relaxed">
                 Alguns dados nunca saem do seu dispositivo: o contato de
-                emergência do SOS (nome e telefone que você digita), os apps e
-                categorias escolhidos no Escudo de foco e os horários de
-                bloqueio programados. Nada disso é enviado aos nossos
+                emergência do SOS (nome e telefone que você digita), os apps,
+                sites e categorias escolhidos no Escudo de foco e os horários
+                de bloqueio programados. Nada disso é enviado aos nossos
                 servidores.
               </p>
 
               <h3 className="text-base font-semibold text-surface mt-4 mb-2">
-                2.4 Tempo de Uso (Screen Time da Apple)
+                2.4 Escudo de foco no iPhone: Tempo de Uso (Screen Time)
               </h3>
               <p className="text-light-slate leading-relaxed">
                 O Escudo de foco usa os controles de Tempo de Uso do iOS
@@ -102,7 +102,31 @@ export default function Privacy() {
               </p>
 
               <h3 className="text-base font-semibold text-surface mt-4 mb-2">
-                2.5 O que os membros do seu grupo veem
+                2.5 Escudo de foco no Android: serviço de acessibilidade
+              </h3>
+              <p className="text-light-slate leading-relaxed">
+                No Android, o Escudo de foco usa o serviço de acessibilidade do
+                sistema, que só é ligado por você, nos Ajustes do aparelho,
+                depois de uma explicação dentro do aplicativo. Ele é usado
+                para duas coisas, e só para elas: saber qual app acabou de
+                abrir, para mostrar a tela do Escudo por cima dele se estiver
+                na sua lista; e, se você autorizar o bloqueio de sites, ler o
+                endereço na barra do navegador para compará-lo com a lista de
+                sites bloqueados. O serviço não lê o que você digita, não
+                observa seus toques nem o conteúdo das páginas, e não guarda o
+                seu histórico de navegação.
+              </p>
+              <p className="text-light-slate leading-relaxed mt-3">
+                Para você escolher o que bloquear, o aplicativo lista os apps
+                instalados que aparecem na gaveta de apps do aparelho. A lista
+                escolhida e essas verificações ficam somente no seu aparelho:
+                nada disso é enviado aos nossos servidores nem compartilhado
+                com terceiros. Você pode desligar o serviço a qualquer momento
+                nos Ajustes de acessibilidade do Android.
+              </p>
+
+              <h3 className="text-base font-semibold text-surface mt-4 mb-2">
+                2.6 O que os membros do seu grupo veem
               </h3>
               <p className="text-light-slate leading-relaxed">
                 Ao entrar num grupo, os demais membros passam a ver o seu nome
@@ -114,7 +138,7 @@ export default function Privacy() {
               </p>
 
               <h3 className="text-base font-semibold text-surface mt-4 mb-2">
-                2.6 Dados de pagamento
+                2.7 Dados de pagamento
               </h3>
               <p className="text-light-slate leading-relaxed">
                 As compras in-app são processadas pela Apple App Store e Google
