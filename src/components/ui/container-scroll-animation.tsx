@@ -1,5 +1,9 @@
-import React, { useRef } from "react";
+import React from "react";
 import { useScroll, useTransform, motion, type MotionValue } from "framer-motion";
+
+const MOBILE_MAX_WIDTH = 768;
+// Page scroll (px) over which the phone flattens and the title rises.
+const SCROLL_RANGE = [0, 400];
 
 export const ContainerScroll = ({
   titleComponent,
@@ -8,38 +12,33 @@ export const ContainerScroll = ({
   titleComponent: string | React.ReactNode;
   children: React.ReactNode;
 }) => {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-  });
-  const [isMobile, setIsMobile] = React.useState(false);
+  // Driven by the page scroll, not by the container's position in the viewport: with a target
+  // the range depended on the window height and, on phones and on windows taller than the
+  // container, it inverted and the title loaded already pushed up under the fixed navbar.
+  const { scrollY } = useScroll();
+  const [isMobile, setIsMobile] = React.useState(
+    () => typeof window !== "undefined" && window.innerWidth <= MOBILE_MAX_WIDTH
+  );
 
   React.useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(window.innerWidth <= MOBILE_MAX_WIDTH);
     };
-    checkMobile();
     window.addEventListener("resize", checkMobile);
     return () => {
       window.removeEventListener("resize", checkMobile);
     };
   }, []);
 
-  const scaleDimensions = () => {
-    return isMobile ? [0.75, 0.95] : [0.8, 1];
-  };
-
-  const rotate = useTransform(scrollYProgress, [0, 1], [25, 0]);
-  const scale = useTransform(scrollYProgress, [0, 1], scaleDimensions());
-  const translate = useTransform(scrollYProgress, [0, 1], [0, -80]);
+  // Phones get a flat, static phone: the tilt only reads well with room around it.
+  const rotate = useTransform(scrollY, SCROLL_RANGE, isMobile ? [0, 0] : [25, 0]);
+  const scale = useTransform(scrollY, SCROLL_RANGE, isMobile ? [1, 1] : [0.8, 1]);
+  const translate = useTransform(scrollY, SCROLL_RANGE, isMobile ? [0, 0] : [0, -80]);
 
   return (
-    <div
-      className="h-[52rem] md:h-[65rem] flex items-center justify-center relative px-4 md:px-6 py-10 md:p-20"
-      ref={containerRef}
-    >
+    <div className="md:h-[65rem] flex items-start md:items-center justify-center relative px-4 md:px-6 pt-6 md:p-20">
       <div
-        className="py-10 md:py-32 w-full relative flex flex-col items-center"
+        className="md:py-32 w-full relative flex flex-col items-center"
         style={{ perspective: "1200px" }}
       >
         <Header translate={translate} titleComponent={titleComponent} />
@@ -83,23 +82,9 @@ export const PhoneCard = ({
         rotateX: rotate,
         scale,
       }}
-      className="mx-auto mt-4 md:-mt-8 w-[280px] h-[580px] md:w-[320px] md:h-[660px] relative"
+      className="mx-auto mt-10 md:-mt-8 w-[260px] md:w-[320px] relative"
     >
-      {/* Phone frame */}
-      <div className="w-full h-full rounded-[48px] bg-[#1a1a1a] p-[6px] shadow-[0_0_0_2px_#333,0_20px_60px_rgba(0,0,0,0.5)] glow-teal">
-        {/* Notch */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 z-20 w-[100px] h-[28px] bg-[#1a1a1a] rounded-b-2xl flex items-center justify-center">
-          <div className="w-[60px] h-[4px] bg-[#333] rounded-full mt-1" />
-        </div>
-
-        {/* Screen */}
-        <div className="w-full h-full overflow-hidden rounded-[42px] bg-deep-blue">
-          {children}
-        </div>
-      </div>
-
-      {/* Bottom bar */}
-      <div className="absolute bottom-[10px] left-1/2 -translate-x-1/2 z-20 w-[120px] h-[4px] bg-[#555] rounded-full" />
+      {children}
     </motion.div>
   );
 };

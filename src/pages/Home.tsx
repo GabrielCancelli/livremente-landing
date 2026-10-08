@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Sparkles, Timer, Shield } from "lucide-react";
+import { Sparkles, Bird, Shield } from "lucide-react";
 import HeroScroll from "@/components/Hero/HeroScroll";
 import FeatureShowcase from "@/components/Home/FeatureShowcase";
 import DownloadCTA from "@/components/Home/WaitlistCTA";
@@ -28,7 +28,7 @@ export default function Home() {
                 bg: "bg-blue-50"
               },
               {
-                icon: Timer,
+                icon: Bird,
                 stat: "6 pássaros",
                 label: "para soltar na caminhada, um a cada marco da sequência, do Pardal à Fênix aos 90 dias",
                 color: "#0FB3A3",
@@ -37,7 +37,7 @@ export default function Home() {
               {
                 icon: Shield,
                 stat: "100%",
-                label: "do bloqueio processado no seu aparelho: o app nunca sabe o nome dos apps que você escolheu",
+                label: "do bloqueio processado no seu aparelho: o que você escolheu bloquear nunca vai para os nossos servidores",
                 color: "#102A43",
                 bg: "bg-slate-100"
               },

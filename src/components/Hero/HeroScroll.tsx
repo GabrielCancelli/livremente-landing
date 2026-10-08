@@ -1,5 +1,6 @@
 import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 import GradientText from "@/components/ui/GradientText";
+import PhoneFrame from "@/components/ui/PhoneFrame";
 import CountdownTimer from "./CountdownTimer";
 
 export default function HeroScroll() {
@@ -22,18 +23,11 @@ export default function HeroScroll() {
           </div>
         }
       >
-        {/* App screenshot using real image */}
-        <div className="w-full h-full bg-[#FDF6EC] flex items-center justify-center relative overflow-hidden">
-          <img
-            src="/mockup2-home.png"
-            alt="A tela inicial do LivreMente"
-            className="w-full h-full object-cover"
-          />
-        </div>
+        <PhoneFrame src="/mockup2-home.png" alt="A tela inicial do LivreMente" eager className="glow-teal" />
       </ContainerScroll>
 
-      {/* Countdown below the phone */}
-      <div className="mt-4 md:mt-8 relative z-10">
+      {/* Download buttons below the phone */}
+      <div className="mt-10 md:mt-8 relative z-10">
         <CountdownTimer />
       </div>
     </div>

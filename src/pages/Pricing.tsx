@@ -1,9 +1,12 @@
 import { motion } from "framer-motion";
 import GradientText from "@/components/ui/GradientText";
 import { Check, X, Sparkles } from "lucide-react";
-import { trackAppStoreClick } from "@/lib/metaPixel";
+import { trackAppStoreClick, trackPlayStoreClick } from "@/lib/metaPixel";
+import { APP_STORE_URL, PLAY_STORE_URL, isAndroidDevice } from "@/lib/stores";
+import { AppleIcon, AndroidIcon } from "@/components/ui/StoreIcons";
 
-const APP_STORE_URL = "https://apps.apple.com/br/app/livremente/id6759587050";
+// Plan buttons open the visitor's own store; desktop keeps the App Store.
+const onAndroid = isAndroidDevice();
 
 interface Plan {
   name: string;
@@ -78,7 +81,7 @@ const plans: Plan[] = [
 const faqs = [
   {
     q: "Posso cancelar a qualquer momento?",
-    a: "Sim! Sem multa, sem burocracia. Cancele direto pela App Store e continue com acesso até o fim do período pago.",
+    a: "Sim! Sem multa, sem burocracia. Cancele na loja onde assinou (App Store ou Google Play) e continue com acesso até o fim do período pago.",
   },
   {
     q: "A versão gratuita realmente funciona?",
@@ -90,7 +93,7 @@ const faqs = [
   },
   {
     q: "Como funciona o pagamento?",
-    a: "O pagamento é processado pela App Store (iOS) com total segurança, nos métodos aceitos pela Apple.",
+    a: "O pagamento é processado pela App Store no iPhone e pela Google Play no Android, com total segurança, nos métodos aceitos por cada loja.",
   },
   {
     q: "Tem desconto no plano anual?",
@@ -187,10 +190,12 @@ export default function Pricing() {
               </ul>
 
               <a
-                href={APP_STORE_URL}
+                href={onAndroid ? PLAY_STORE_URL : APP_STORE_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={() => trackAppStoreClick(`pricing-${plan.name.toLowerCase()}`)}
+                onClick={() =>
+                  (onAndroid ? trackPlayStoreClick : trackAppStoreClick)(`pricing-${plan.name.toLowerCase()}`)
+                }
                 className={`w-full py-4 rounded-xl font-bold text-sm transition-all text-center block ${
                   plan.popular
                     ? "bg-deep-blue hover:bg-deep-blue/90 text-white shadow-lg hover:shadow-xl"
@@ -201,6 +206,33 @@ export default function Pricing() {
               </a>
             </motion.div>
             ))}
+          </div>
+
+          {/* Both stores, for whoever is on the other platform */}
+          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 text-sm text-text-muted">
+            <span>Disponível para iPhone e Android:</span>
+            <div className="flex items-center gap-2">
+              <a
+                href={APP_STORE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => trackAppStoreClick("pricing-stores")}
+                className="inline-flex items-center gap-2 bg-deep-blue hover:bg-deep-blue/90 text-white font-semibold px-4 py-2 rounded-full transition-colors"
+              >
+                <AppleIcon size={14} />
+                App Store
+              </a>
+              <a
+                href={PLAY_STORE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => trackPlayStoreClick("pricing-stores")}
+                className="inline-flex items-center gap-2 bg-teal hover:bg-teal-dark text-white font-semibold px-4 py-2 rounded-full transition-colors"
+              >
+                <AndroidIcon size={16} />
+                Google Play
+              </a>
+            </div>
           </div>
         </div>
       </section>

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import PhoneFrame from "@/components/ui/PhoneFrame";
 
 interface Feature {
   id: string;
@@ -23,7 +24,7 @@ const features: Feature[] = [
   {
     id: "escudo",
     title: "Um escudo contra as distrações.",
-    description: "Os apps e sites que você escolher somem na hora do foco, e o conteúdo adulto sai do ar junto, sempre. Programe horários e o escudo liga sozinho.",
+    description: "Os apps e sites que você escolher somem na hora do foco, e o conteúdo adulto sai do ar junto, sempre. No iPhone, programe horários e o escudo liga sozinho.",
     image: "/mockup2-escudo.png",
     badge: "Pro",
     reverse: true,
@@ -93,21 +94,9 @@ export default function FeatureShowcase() {
               </p>
             </div>
 
-            {/* Mockup Container */}
+            {/* Mockup */}
             <div className="flex-1 flex justify-center w-full">
-              <div className="relative w-full max-w-[320px] aspect-[1/2.16] bg-deep-blue rounded-[3rem] p-3 shadow-2xl border-4 border-slate-200">
-                {/* Notch Mockup */}
-                <div className="absolute top-0 inset-x-0 w-32 h-7 bg-slate-200 rounded-b-3xl mx-auto z-20 shadow-sm border-b border-x border-slate-300"></div>
-                
-                {/* Screen Content */}
-                <div className="w-full h-full bg-slate-100 rounded-[2.25rem] overflow-hidden relative">
-                  <img
-                    src={feature.image}
-                    alt={feature.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </div>
+              <PhoneFrame src={feature.image} alt={feature.title} className="w-full max-w-[300px]" />
             </div>
           </motion.div>
         ))}

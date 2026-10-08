@@ -2,11 +2,10 @@ import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { Star, Shield, Zap } from "lucide-react";
 import { trackAppStoreClick, trackPlayStoreClick, trackEvent } from "@/lib/metaPixel";
+import { APP_STORE_URL, PLAY_STORE_URL } from "@/lib/stores";
 
-const APP_STORE_URL = "https://apps.apple.com/br/app/livremente/id6759587050";
-// Android publicado na Play em 2026-09-28 (produção, vc10). A lista de espera
-// (AndroidWaitlistModal) saiu daqui; o componente fica no repositório por enquanto.
-const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.livremente.app";
+// A lista de espera do Android (AndroidWaitlistModal) saiu daqui quando o app entrou na Play
+// (2026-09-28); o componente fica no repositório por enquanto.
 
 export default function Download() {
   useEffect(() => {
@@ -89,7 +88,7 @@ export default function Download() {
           {[
             { icon: Star, label: "Gratuito" },
             { icon: Shield, label: "Sem anúncios" },
-            { icon: Zap, label: "Leve e Rápido" },
+            { icon: Zap, label: "Leve e rápido" },
           ].map((item) => (
             <div key={item.label} className="flex flex-col items-center gap-2">
               <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center">

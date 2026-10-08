@@ -13,7 +13,7 @@ const values = [
   {
     icon: ShieldCheck,
     title: "Privacidade de verdade",
-    desc: "O bloqueio é processado no seu aparelho e o app nunca sabe o nome dos apps que você escolheu. Seu grupo vê a sua perseverança, nunca o que você escreveu.",
+    desc: "O bloqueio é processado no seu aparelho, e o que você escolheu bloquear nunca vai para os nossos servidores. Seu grupo vê a sua perseverança, nunca o que você escreveu.",
     color: "#0FB3A3",
   },
   {
