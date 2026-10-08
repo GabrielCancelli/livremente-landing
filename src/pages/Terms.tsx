@@ -56,6 +56,7 @@ export default function Terms() {
                 <li>Grupos para acompanhar a perseverança uns dos outros</li>
                 <li>Escudo de foco: bloqueio de apps e sites escolhidos (plano Pro)</li>
                 <li>Protocolos: programas diários de superação de hábitos (plano Pro)</li>
+                <li>Guardião: alguém de confiança acompanha a sua caminhada (gerar o código é do plano Pro)</li>
                 <li>Metas pessoais do dia e SOS com respiração guiada</li>
               </ul>
               <p className="text-light-slate leading-relaxed mt-3">
@@ -166,26 +167,58 @@ export default function Terms() {
               </ul>
             </div>
 
-            {/* 6. Premium */}
+            {/* 6. Guardião */}
             <div>
               <h2 className="text-xl font-bold font-[family-name:var(--font-heading)] text-teal mb-3">
-                6. Assinatura Pro
+                6. Guardião
+              </h2>
+              <ul className="list-disc list-inside text-light-slate space-y-1 ml-2">
+                <li>
+                  Quem gera o código é quem será acompanhado (o protegido), e
+                  só ele. Gerar o código é do plano Pro; ser Guardião é grátis
+                </li>
+                <li>
+                  O Guardião vê se o protegido fez o devocional, a sequência,
+                  o recorde e o estado do Escudo, e recebe uma notificação
+                  quando o Escudo é desligado dentro do App. Nunca vê conteúdo
+                </li>
+                <li>
+                  O protegido pode parar de compartilhar a qualquer momento,
+                  com aviso ao Guardião e fim do acesso em até 24 horas; o
+                  Guardião pode deixar de acompanhar na hora
+                </li>
+                <li>
+                  A notificação depende de internet no aparelho do protegido e
+                  de notificações ligadas no do Guardião; apagar o App não gera
+                  notificação
+                </li>
+                <li>
+                  É proibido usar o Guardião para acompanhar alguém sem o
+                  consentimento dessa pessoa
+                </li>
+              </ul>
+            </div>
+
+            {/* 7. Premium */}
+            <div>
+              <h2 className="text-xl font-bold font-[family-name:var(--font-heading)] text-teal mb-3">
+                7. Assinatura Pro
               </h2>
               <h3 className="text-base font-semibold text-surface mt-4 mb-2">
-                6.1 Planos e pagamento
+                7.1 Planos e pagamento
               </h3>
               <p className="text-light-slate leading-relaxed">
                 O App oferece funcionalidades gratuitas (devocional, sessões de
-                foco, grupos, sequência, metas e SOS) e funcionalidades do plano
-                Pro (Escudo de foco, Protocolos e grupos com mais de 20
-                lugares). As assinaturas, mensal ou anual, são processadas pela
+                foco, grupos, sequência, metas, SOS e ser Guardião de alguém) e
+                funcionalidades do plano Pro (Escudo de foco, Protocolos, grupos
+                com mais de 20 lugares e gerar o código do Guardião). As assinaturas, mensal ou anual, são processadas pela
                 Apple App Store (iPhone) ou pela Google Play (Android). Os
                 preços são exibidos na moeda local antes da confirmação da
                 compra.
               </p>
 
               <h3 className="text-base font-semibold text-surface mt-4 mb-2">
-                6.2 Renovação automática
+                7.2 Renovação automática
               </h3>
               <p className="text-light-slate leading-relaxed">
                 As assinaturas são renovadas automaticamente ao final de cada
@@ -194,7 +227,7 @@ export default function Terms() {
               </p>
 
               <h3 className="text-base font-semibold text-surface mt-4 mb-2">
-                6.3 Cancelamento
+                7.3 Cancelamento
               </h3>
               <p className="text-light-slate leading-relaxed">
                 Cancelamentos devem ser feitos na loja onde a assinatura foi
@@ -205,7 +238,7 @@ export default function Terms() {
               </p>
 
               <h3 className="text-base font-semibold text-surface mt-4 mb-2">
-                6.4 Reembolso
+                7.4 Reembolso
               </h3>
               <p className="text-light-slate leading-relaxed">
                 Reembolsos seguem as políticas da loja onde a compra foi feita
@@ -213,10 +246,10 @@ export default function Terms() {
               </p>
             </div>
 
-            {/* 7. Propriedade intelectual */}
+            {/* 8. Propriedade intelectual */}
             <div>
               <h2 className="text-xl font-bold font-[family-name:var(--font-heading)] text-teal mb-3">
-                7. Propriedade Intelectual
+                8. Propriedade Intelectual
               </h2>
               <p className="text-light-slate leading-relaxed">
                 Todo o conteúdo do App, incluindo textos, ilustrações, ícones,
@@ -227,10 +260,10 @@ export default function Terms() {
               </p>
             </div>
 
-            {/* 8. Isenção */}
+            {/* 9. Isenção */}
             <div>
               <h2 className="text-xl font-bold font-[family-name:var(--font-heading)] text-teal mb-3">
-                8. Isenção de Responsabilidade
+                9. Isenção de Responsabilidade
               </h2>
               <p className="text-light-slate leading-relaxed">
                 O App é fornecido "como está" (<em>as is</em>). Não garantimos que
@@ -246,10 +279,10 @@ export default function Terms() {
               </ul>
             </div>
 
-            {/* 9. Modificações */}
+            {/* 10. Modificações */}
             <div>
               <h2 className="text-xl font-bold font-[family-name:var(--font-heading)] text-teal mb-3">
-                9. Modificações nos Termos
+                10. Modificações nos Termos
               </h2>
               <p className="text-light-slate leading-relaxed">
                 Podemos alterar estes Termos periodicamente. Alterações
@@ -259,10 +292,10 @@ export default function Terms() {
               </p>
             </div>
 
-            {/* 10. Legislação */}
+            {/* 11. Legislação */}
             <div>
               <h2 className="text-xl font-bold font-[family-name:var(--font-heading)] text-teal mb-3">
-                10. Legislação Aplicável
+                11. Legislação Aplicável
               </h2>
               <p className="text-light-slate leading-relaxed">
                 Estes Termos são regidos pelas leis da República Federativa do
@@ -272,10 +305,10 @@ export default function Terms() {
               </p>
             </div>
 
-            {/* 11. Contato */}
+            {/* 12. Contato */}
             <div>
               <h2 className="text-xl font-bold font-[family-name:var(--font-heading)] text-teal mb-3">
-                11. Contato
+                12. Contato
               </h2>
               <p className="text-light-slate leading-relaxed">
                 Para dúvidas ou solicitações sobre estes Termos, entre em

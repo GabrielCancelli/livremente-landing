@@ -138,7 +138,33 @@ export default function Privacy() {
               </p>
 
               <h3 className="text-base font-semibold text-surface mt-4 mb-2">
-                2.7 Dados de pagamento
+                2.7 O que o seu Guardião vê
+              </h3>
+              <p className="text-light-slate leading-relaxed">
+                O Guardião é alguém de confiança que você mesmo escolhe: só
+                existe se você gerar um código (recurso do plano Pro) e essa
+                pessoa o digitar no aplicativo dela. A partir daí, você é o
+                protegido e o Guardião vê, e somente isto: se você fez o
+                devocional hoje e em cada um dos últimos 7 dias, a sua
+                sequência e o seu recorde, e se o Escudo de foco está ligado.
+                Quando você desliga o Escudo dentro do aplicativo, o Guardião
+                recebe uma notificação. Ele nunca vê os sites e apps que você
+                usa ou bloqueia, nem o que você escreve (orações, metas,
+                protocolos), e nenhum dado de localização.
+              </p>
+              <p className="text-light-slate leading-relaxed mt-3">
+                Você vê exatamente o que o Guardião vê, e o nome que ele
+                informou, em Ajustes, Guardião. Pode parar de compartilhar a
+                qualquer momento: o Guardião é avisado na hora e perde o
+                acesso em até 24 horas. Os sinais do Escudo são guardados por
+                no máximo 90 dias. Usuários entre 13 e 17 anos devem usar o
+                Guardião com o conhecimento de um responsável, e o recurso
+                existe para apoiar quem quer ser acompanhado, nunca para
+                acompanhar alguém sem o consentimento dessa pessoa.
+              </p>
+
+              <h3 className="text-base font-semibold text-surface mt-4 mb-2">
+                2.8 Dados de pagamento
               </h3>
               <p className="text-light-slate leading-relaxed">
                 As compras in-app são processadas pela Apple App Store e Google

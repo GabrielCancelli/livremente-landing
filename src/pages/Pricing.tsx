@@ -33,16 +33,18 @@ const plans: Plan[] = [
       { text: "Metas do dia, escritas por você", included: true },
       { text: "SOS: respiração e alguém para ligar", included: true },
       { text: "Pássaros por marco de sequência", included: true },
+      { text: "Ser Guardião de alguém", included: true },
       { text: "Escudo de foco (apps e sites somem)", included: false },
       { text: "Protocolos: conteúdo adulto, celular, apostas", included: false },
       { text: "Grupos com mais de 20 lugares", included: false },
+      { text: "Ter um Guardião (gerar o código)", included: false },
     ],
   },
   {
     name: "Pro Mensal",
     price: "R$ 24,90",
     period: "/mês",
-    description: "Tudo do grátis, mais o bloqueio e os programas",
+    description: "Tudo do grátis, mais o bloqueio, os programas e o Guardião",
     popular: false,
     cta: "Assinar Mensal",
     features: [
@@ -52,9 +54,11 @@ const plans: Plan[] = [
       { text: "Metas do dia, escritas por você", included: true },
       { text: "SOS: respiração e alguém para ligar", included: true },
       { text: "Pássaros por marco de sequência", included: true },
+      { text: "Ser Guardião de alguém", included: true },
       { text: "Escudo de foco (apps e sites somem)", included: true },
       { text: "Protocolos: conteúdo adulto, celular, apostas", included: true },
       { text: "Grupos com mais de 20 lugares", included: true },
+      { text: "Ter um Guardião (gerar o código)", included: true },
     ],
   },
   {
@@ -71,9 +75,11 @@ const plans: Plan[] = [
       { text: "Metas do dia, escritas por você", included: true },
       { text: "SOS: respiração e alguém para ligar", included: true },
       { text: "Pássaros por marco de sequência", included: true },
+      { text: "Ser Guardião de alguém", included: true },
       { text: "Escudo de foco (apps e sites somem)", included: true },
       { text: "Protocolos: conteúdo adulto, celular, apostas", included: true },
       { text: "Grupos com mais de 20 lugares", included: true },
+      { text: "Ter um Guardião (gerar o código)", included: true },
     ],
   },
 ];
@@ -90,6 +96,10 @@ const faqs = [
   {
     q: "Preciso do Pro para entrar num grupo grande?",
     a: "Não. Só quem cria o grupo com mais de 20 lugares precisa do Pro. Quem entra não paga nada.",
+  },
+  {
+    q: "O que é o Guardião?",
+    a: "Alguém de confiança que acompanha a sua caminhada: vê se você fez o devocional, a sua sequência e se o Escudo está ligado, e recebe um aviso quando você desliga o Escudo. Quem é acompanhado gera o código (plano Pro); quem acompanha usa o LivreMente de graça.",
   },
   {
     q: "Como funciona o pagamento?",
