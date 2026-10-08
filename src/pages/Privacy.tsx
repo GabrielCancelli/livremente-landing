@@ -146,9 +146,11 @@ export default function Privacy() {
                 pessoa o digitar no aplicativo dela. A partir daí, você é o
                 protegido e o Guardião vê, e somente isto: se você fez o
                 devocional hoje e em cada um dos últimos 7 dias, a sua
-                sequência e o seu recorde, e se o Escudo de foco está ligado.
-                Quando você desliga o Escudo dentro do aplicativo, o Guardião
-                recebe uma notificação. Ele nunca vê os sites e apps que você
+                sequência e o seu recorde, se o Escudo de foco está ligado e
+                quando você abriu o aplicativo pela última vez. Quando você
+                desliga o Escudo no aplicativo, ou quando o aplicativo nota que
+                a permissão do Escudo foi retirada nos ajustes do celular, o
+                Guardião recebe uma notificação. Ele nunca vê os sites e apps que você
                 usa ou bloqueia, nem o que você escreve (orações, metas,
                 protocolos), e nenhum dado de localização.
               </p>

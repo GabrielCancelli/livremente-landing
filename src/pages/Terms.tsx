@@ -179,8 +179,11 @@ export default function Terms() {
                 </li>
                 <li>
                   O Guardião vê se o protegido fez o devocional, a sequência,
-                  o recorde e o estado do Escudo, e recebe uma notificação
-                  quando o Escudo é desligado dentro do App. Nunca vê conteúdo
+                  o recorde, o estado do Escudo e quando o protegido abriu o
+                  App pela última vez, e recebe uma notificação quando o
+                  Escudo é desligado no App ou quando o App nota que a
+                  permissão do Escudo foi retirada nos ajustes do aparelho.
+                  Nunca vê conteúdo
                 </li>
                 <li>
                   O protegido pode encerrar o vínculo a qualquer momento, por
