@@ -183,9 +183,13 @@ export default function Terms() {
                   quando o Escudo é desligado dentro do App. Nunca vê conteúdo
                 </li>
                 <li>
-                  O protegido pode parar de compartilhar a qualquer momento,
-                  com aviso ao Guardião e fim do acesso em até 24 horas; o
-                  Guardião pode deixar de acompanhar na hora
+                  O protegido pode encerrar o vínculo a qualquer momento, por
+                  meio de um pedido: o Guardião é avisado na hora, e o vínculo
+                  termina quando ele aceitar ou, no máximo, 7 dias após o
+                  pedido, prazo em que o acompanhamento continua igual e o
+                  protegido pode desistir. O Guardião pode deixar de acompanhar
+                  na hora, com aviso ao protegido. Excluir a conta encerra o
+                  vínculo na hora, com aviso ao Guardião
                 </li>
                 <li>
                   A notificação depende de internet no aparelho do protegido e

@@ -154,9 +154,12 @@ export default function Privacy() {
               </p>
               <p className="text-light-slate leading-relaxed mt-3">
                 Você vê exatamente o que o Guardião vê, e o nome que ele
-                informou, em Ajustes, Guardião. Pode parar de compartilhar a
-                qualquer momento: o Guardião é avisado na hora e perde o
-                acesso em até 24 horas. Os sinais do Escudo são guardados por
+                informou, em Perfil, Meu Guardião. Você pode encerrar o vínculo
+                a qualquer momento, por um pedido: o Guardião é avisado na hora,
+                e o vínculo termina quando ele aceitar ou, no máximo, 7 dias
+                depois. Até lá o acompanhamento continua igual, e você pode
+                desistir do pedido. Se o Guardião deixar de acompanhar, você é
+                avisado. Os sinais do Escudo são guardados por
                 no máximo 90 dias. Usuários entre 13 e 17 anos devem usar o
                 Guardião com o conhecimento de um responsável, e o recurso
                 existe para apoiar quem quer ser acompanhado, nunca para
