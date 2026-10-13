@@ -18,7 +18,7 @@ export default function Privacy() {
               Política de <span className="gradient-text">Privacidade</span>
             </h1>
             <p className="text-light-slate text-sm">
-              Última atualização: 8 de outubro de 2026
+              Última atualização: 13 de outubro de 2026
             </p>
           </motion.div>
 
@@ -62,6 +62,15 @@ export default function Privacy() {
                 <li>Respostas do questionário inicial de personalização (metas e hábitos)</li>
                 <li>Metas pessoais que você escrever no aplicativo</li>
                 <li>Participação em grupos (criação, entrada e saída por código de convite)</li>
+                <li>
+                  No método dos protocolos: o plano do dia (a hora de risco e o
+                  que fazer), as respostas do fechar o dia, as anotações de
+                  escorregão (o que veio antes, o que muda amanhã e, em apostas,
+                  o valor que você quiser informar), as vontades atravessadas, os
+                  passos das missões e quanto você apostava por semana, se
+                  informar. Guardamos uma cópia na sua conta para nada se perder
+                  ao reinstalar ou trocar de aparelho, e só você tem acesso a ela.
+                </li>
                 <li>Configurações de preferências e notificações</li>
               </ul>
 
@@ -152,7 +161,11 @@ export default function Privacy() {
                 a permissão do Escudo foi retirada nos ajustes do celular, o
                 Guardião recebe uma notificação. Ele nunca vê os sites e apps que você
                 usa ou bloqueia, nem o que você escreve (orações, metas,
-                protocolos), e nenhum dado de localização.
+                protocolos), e nenhum dado de localização. Se você ligar a
+                opção Mostrar minhas missões, o Guardião passa a ver também
+                quantos passos das missões da semana você fez, somados, sem o
+                nome do protocolo nem o título da missão. Ela começa desligada
+                e você a desliga quando quiser.
               </p>
               <p className="text-light-slate leading-relaxed mt-3">
                 Você vê exatamente o que o Guardião vê, e o nome que ele

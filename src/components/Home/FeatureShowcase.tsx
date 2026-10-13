@@ -15,7 +15,7 @@ const features: Feature[] = [
   {
     id: "devocional",
     title: "Um devocional por dia.",
-    description: "Dois minutos de manhã e o dia já conta. A leitura te espera todo dia, e a sua sequência cresce um dia por vez.",
+    description: "De 2 a 10 minutos, no tempo que você escolher, e o dia já conta. A leitura te espera todo dia, e a sua sequência cresce um dia por vez.",
     image: "/mockup2-devocional.png",
     badge: "Grátis",
     reverse: false,
@@ -33,7 +33,7 @@ const features: Feature[] = [
   {
     id: "guardiao",
     title: "Um Guardião do seu lado.",
-    description: "Alguém de confiança vê se você fez o devocional, a sua sequência e se o Escudo está ligado, e recebe um aviso quando você o desliga. Nunca vê o que você escreve, e você para quando quiser. Quem acompanha usa grátis.",
+    description: "Alguém de confiança vê se você fez o devocional, a sua sequência e se o Escudo está ligado, e recebe um aviso quando você o desliga. Se você quiser, vê também quantos passos das missões da semana você fez. Nunca vê o que você escreve. Para encerrar, você pede, e o vínculo acaba em até 7 dias. Quem acompanha usa grátis.",
     image: "/mockup2-guardiao.png",
     badge: "Pro",
     reverse: false,
@@ -51,7 +51,7 @@ const features: Feature[] = [
   {
     id: "protocolos",
     title: "Programas para vencer dependências.",
-    description: "Conteúdo adulto, celular e apostas: um texto por dia, um juramento que vale por 24 horas, e o bloqueio incluído.",
+    description: "Conteúdo adulto, celular e apostas. Todo dia um plano para a hora difícil, 10 minutos de apoio quando a vontade bater e uma missão por semana para fechar uma porta. O bloqueio vem junto.",
     image: "/mockup2-protocolos.png",
     badge: "Pro",
     reverse: false,
@@ -69,7 +69,7 @@ const features: Feature[] = [
   {
     id: "conquistas",
     title: "Perseverar vira hábito.",
-    description: "Cada marco da sua sequência solta um pássaro novo. São seis até a Fênix, que chega aos 90 dias.",
+    description: "Doze pássaros que você ganha fazendo: o primeiro devocional, ligar o Escudo, fechar o dia, voltar depois de escorregar. Nenhum se perde.",
     image: "/mockup2-conquistas.png",
     badge: "Grátis",
     reverse: false,

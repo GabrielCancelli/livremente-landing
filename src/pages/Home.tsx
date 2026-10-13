@@ -29,8 +29,8 @@ export default function Home() {
               },
               {
                 icon: Bird,
-                stat: "6 pássaros",
-                label: "para soltar na caminhada, um a cada marco da sequência, do Pardal à Fênix aos 90 dias",
+                stat: "12 pássaros",
+                label: "para ganhar fazendo: o primeiro devocional, o Escudo ligado, o dia fechado. Nenhum se perde",
                 color: "#0FB3A3",
                 bg: "bg-teal-50"
               },

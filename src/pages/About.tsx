@@ -25,7 +25,7 @@ const values = [
   {
     icon: Gamepad2,
     title: "Marcos que celebram",
-    desc: "Cada etapa da sequência solta um pássaro novo, do Pardal à Fênix. A caminhada tem festa no meio, não só no fim.",
+    desc: "Cada passo vira um pássaro: o primeiro devocional, o Escudo ligado, o dia fechado. São doze, e a caminhada tem festa no meio, não só no fim.",
     color: "#FFC107",
   },
   {
