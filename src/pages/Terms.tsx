@@ -18,7 +18,7 @@ export default function Terms() {
               Termos de <span className="gradient-text">Uso</span>
             </h1>
             <p className="text-light-slate text-sm">
-              Última atualização: 8 de outubro de 2026
+              Última atualização: 14 de outubro de 2026
             </p>
           </motion.div>
 
@@ -186,6 +186,18 @@ export default function Terms() {
                   Nunca vê conteúdo
                 </li>
                 <li>
+                  Só se o protegido ligar a opção no App, o Guardião vê também
+                  quantos passos das missões da semana foram feitos, sem o
+                  nome do protocolo nem o da missão. A opção nasce desligada e
+                  o protegido pode desligá-la a qualquer momento
+                </li>
+                <li>
+                  Sem o plano Pro do protegido, o vínculo fica em pausa: o
+                  Guardião não vê nenhum sinal e os dois são avisados. O
+                  acompanhamento volta quando o protegido assinar de novo.
+                  Encerrar o vínculo e excluir a conta não dependem do Pro
+                </li>
+                <li>
                   O protegido pode encerrar o vínculo a qualquer momento, por
                   meio de um pedido: o Guardião é avisado na hora, e o vínculo
                   termina quando ele aceitar ou, no máximo, 7 dias após o
@@ -221,7 +233,10 @@ export default function Terms() {
                 com mais de 20 lugares e gerar o código do Guardião). As assinaturas, mensal ou anual, são processadas pela
                 Apple App Store (iPhone) ou pela Google Play (Android). Os
                 preços são exibidos na moeda local antes da confirmação da
-                compra.
+                compra. O plano anual pode começar com 7 dias grátis para quem
+                nunca assinou o Pro, conforme a regra de cada loja; sem
+                cancelamento até 24 horas antes do fim do teste, a cobrança
+                anual começa automaticamente.
               </p>
 
               <h3 className="text-base font-semibold text-surface mt-4 mb-2">

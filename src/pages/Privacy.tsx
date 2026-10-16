@@ -18,7 +18,7 @@ export default function Privacy() {
               Política de <span className="gradient-text">Privacidade</span>
             </h1>
             <p className="text-light-slate text-sm">
-              Última atualização: 13 de outubro de 2026
+              Última atualização: 14 de outubro de 2026
             </p>
           </motion.div>
 
@@ -69,7 +69,8 @@ export default function Privacy() {
                   o valor que você quiser informar), as vontades atravessadas, os
                   passos das missões e quanto você apostava por semana, se
                   informar. Guardamos uma cópia na sua conta para nada se perder
-                  ao reinstalar ou trocar de aparelho, e só você tem acesso a ela.
+                  ao reinstalar ou trocar de aparelho. Só você tem acesso a ela,
+                  e ela é apagada junto com a conta.
                 </li>
                 <li>Configurações de preferências e notificações</li>
               </ul>
@@ -133,6 +134,19 @@ export default function Privacy() {
                 com terceiros. Você pode desligar o serviço a qualquer momento
                 nos Ajustes de acessibilidade do Android.
               </p>
+              <p className="text-light-slate leading-relaxed mt-3">
+                O aplicativo também pode levar você a ligar o DNS privado do
+                Android com um filtro de conteúdo adulto (o endereço sugerido é
+                o da CleanBrowsing). Esse é um ajuste do próprio sistema, que
+                você liga e desliga nos Ajustes: com ele ligado, os endereços
+                que o celular procura são resolvidos por esse serviço, conforme
+                a política de privacidade dele, e não passam pelo LivreMente.
+                Para investigar falhas do bloqueio, o aplicativo envia ao nosso
+                serviço de monitoramento de erros só o estado do Escudo: se
+                está ligado, quais permissões estão dadas, quantos apps e sites
+                estão na lista, o navegador padrão e o endereço de DNS privado
+                configurado. Nunca a lista de apps ou de sites.
+              </p>
 
               <h3 className="text-base font-semibold text-surface mt-4 mb-2">
                 2.6 O que os membros do seu grupo veem
@@ -174,7 +188,19 @@ export default function Privacy() {
                 e o vínculo termina quando ele aceitar ou, no máximo, 7 dias
                 depois. Até lá o acompanhamento continua igual, e você pode
                 desistir do pedido. Se o Guardião deixar de acompanhar, você é
-                avisado. Os sinais do Escudo são guardados por
+                avisado.
+              </p>
+              <p className="text-light-slate leading-relaxed mt-3">
+                O Guardião depende do seu plano Pro. Se o Pro terminar (por
+                exemplo, quando o teste grátis acaba sem assinatura), o vínculo
+                fica em pausa: o Guardião deixa de ver o seu devocional, a
+                sequência, o Escudo, a última abertura e as missões, os avisos
+                do Escudo param, e vocês dois são avisados. Quando o Pro volta,
+                o acompanhamento volta sozinho. Pedir para encerrar, sair do
+                vínculo e excluir a conta funcionam também durante a pausa.
+              </p>
+              <p className="text-light-slate leading-relaxed mt-3">
+                Os sinais do Escudo são guardados por
                 no máximo 90 dias. Usuários entre 13 e 17 anos devem usar o
                 Guardião com o conhecimento de um responsável, e o recurso
                 existe para apoiar quem quer ser acompanhado, nunca para
@@ -188,8 +214,10 @@ export default function Privacy() {
                 As compras in-app são processadas pela Apple App Store e Google
                 Play Store. <strong>Nós não temos acesso</strong> ao número do
                 seu cartão de crédito ou dados financeiros. O gerenciamento de
-                assinaturas é feito via RevenueCat, que recebe apenas um
-                identificador anônimo para validar entitlements.
+                assinaturas é feito via RevenueCat, que recebe apenas o
+                identificador da sua conta (um código aleatório, sem nome nem
+                e-mail) e o histórico de compras informado pela loja, para
+                confirmar o acesso ao plano Pro.
               </p>
             </div>
 

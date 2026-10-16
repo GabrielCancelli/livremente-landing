@@ -21,7 +21,7 @@ interface Plan {
 const plans: Plan[] = [
   {
     name: "Gratuito",
-    price: "R$ 0",
+    price: "R$\u00a00",
     period: "para sempre",
     description: "Para dar o primeiro passo",
     popular: false,
@@ -42,7 +42,7 @@ const plans: Plan[] = [
   },
   {
     name: "Pro Mensal",
-    price: "R$ 24,90",
+    price: "R$\u00a024,90",
     period: "/mês",
     description: "Tudo do grátis, mais o bloqueio, os programas e o Guardião",
     popular: false,
@@ -63,11 +63,11 @@ const plans: Plan[] = [
   },
   {
     name: "Pro Anual",
-    price: "R$ 12,49",
+    price: "R$\u00a012,49",
     period: "/mês",
-    description: "Cobrado R$ 149,90 ao ano (R$ 0,41 por dia)",
+    description: "7 dias grátis, depois R$\u00a0149,90 ao ano (R$\u00a00,41 por dia)",
     popular: true,
-    cta: "Assinar Anual (50% OFF)",
+    cta: "Testar 7 dias grátis",
     features: [
       { text: "Devocional diário e sequência", included: true },
       { text: "Sessões de foco de 25 e 50 minutos", included: true },
@@ -91,7 +91,7 @@ const faqs = [
   },
   {
     q: "A versão gratuita realmente funciona?",
-    a: "Sim! Devocional, foco, grupos, metas e SOS são grátis de verdade. O Pro destrava o Escudo de foco, os Protocolos e os grupos grandes.",
+    a: "Sim! Devocional, foco, grupos, metas e SOS são grátis de verdade. O Pro destrava o Escudo de foco, os Protocolos, os grupos grandes e o Guardião.",
   },
   {
     q: "Preciso do Pro para entrar num grupo grande?",
@@ -99,15 +99,19 @@ const faqs = [
   },
   {
     q: "O que é o Guardião?",
-    a: "Alguém de confiança que acompanha a sua caminhada: vê se você fez o devocional, a sua sequência e se o Escudo está ligado, e recebe um aviso quando você desliga o Escudo. Quem é acompanhado gera o código (plano Pro); quem acompanha usa o LivreMente de graça.",
+    a: "Alguém de confiança que acompanha a sua caminhada: vê se você fez o devocional, a sua sequência e se o Escudo está ligado, e recebe um aviso quando você desliga o Escudo. Se você ligar, vê também quantos passos das missões da semana você fez. Nunca vê o que você escreve. Quem é acompanhado gera o código (plano Pro); quem acompanha usa o LivreMente de graça. Se o seu Pro acabar, o acompanhamento pausa e os dois são avisados.",
   },
   {
     q: "Como funciona o pagamento?",
     a: "O pagamento é processado pela App Store no iPhone e pela Google Play no Android, com total segurança, nos métodos aceitos por cada loja.",
   },
   {
+    q: "Tem teste grátis?",
+    a: "Tem, no plano anual: 7 dias grátis para quem nunca assinou o Pro. Dois dias antes da cobrança o app te avisa. Cancele na loja até 24 horas antes do fim do teste e nada é cobrado.",
+  },
+  {
     q: "Tem desconto no plano anual?",
-    a: "Sim! O plano anual custa R$ 149,90 por ano, uma economia de R$ 148,90 em relação aos 12 meses do mensal.",
+    a: "Sim! O plano anual custa R$\u00a0149,90 por ano, uma economia de R$\u00a0148,90 em relação aos 12 meses do mensal.",
   },
 ];
 

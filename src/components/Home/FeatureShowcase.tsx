@@ -33,7 +33,7 @@ const features: Feature[] = [
   {
     id: "guardiao",
     title: "Um Guardião do seu lado.",
-    description: "Alguém de confiança vê se você fez o devocional, a sua sequência e se o Escudo está ligado, e recebe um aviso quando você o desliga. Se você quiser, vê também quantos passos das missões da semana você fez. Nunca vê o que você escreve. Para encerrar, você pede, e o vínculo acaba em até 7 dias. Quem acompanha usa grátis.",
+    description: "Alguém de confiança vê se você fez o devocional, a sua sequência e se o Escudo está ligado, e recebe um aviso quando você o desliga. Se você quiser, vê também quantos passos das missões da semana você fez. Nunca vê o que você escreve. Para encerrar, você pede, e o vínculo acaba em até 7 dias. Quem acompanha usa grátis, e se o seu Pro acabar, o acompanhamento pausa e os dois são avisados.",
     image: "/mockup2-guardiao.png",
     badge: "Pro",
     reverse: false,
